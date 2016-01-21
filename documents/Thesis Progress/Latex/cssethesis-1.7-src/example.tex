@@ -1,0 +1,240 @@
+\documentclass[a4paper,11pt,phdthesis,singlespace,twoside]{cssethesis}
+
+\usepackage{harvard} % Use the Harvard bibliography and citation package
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{mathptmx}
+\usepackage{times}
+
+\usepackage{algorithm}
+\usepackage{enumitem}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{apacite}
+
+
+\thesisauthor{Viet Vo}
+\thesisauthorpreviousdegrees{BSc., MSc.} % Optional
+\thesisdepartment{Caulfield School of Information Technology}
+\thesisauthorstudentid{26356988} % Needed for litreview
+\thesisauthoremail{viet.vo\@@monash.edu} 
+
+%\thesismonth{October} % Optional. Current month is used if this is not set
+%\thesisyear{2015} % Optional. Current year is used if this is not set
+\thesistitle{The Effects of Group Member's Parameters on Human Crowd Modelling}
+\thesissupervisor{Prof. Bernd Meyer}
+\thesissupervisoremail{bernd.meyer\@@monash.edu} 
+\thesisassocsupervisor{Dr. Aldeida Aleti} 
+\thesisassocsupervisoremail{aldeida.aleti\@@monash.edu} 
+
+% start the document
+\begin{document}
+
+\frontmatter					% start the thesis front matter.
+
+\thesistitlepage				% Generate the title page.
+%\thesiscopyrightpage			% Generate the copyright page.
+%\thesisdedicationpage			% Generate a dedication page (optional)
+\tableofcontents				% Generate a table of contents.
+\listoftables					% Generate a list of tables (optional).
+\listoffigures					% Generate a list of figures (optional).
+
+\begin{thesisabstract}			% generate the abstract page.
+This thesis introduces
+\end{thesisabstract}                 
+
+\thesisdeclarationpage			% generate the declaration page (optional).
+
+%\begin{thesisacknowledgments}	% generate the acknowledgements page (optional).
+%I would like to thank everyone who helped to make this possible. It has
+%been an incredible journey of self-discovery, and I love every last one of
+%you\ldots
+%\end{thesisacknowledgments}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Main matter 
+%%
+\mainmatter						% start the thesis body.
+
+\chapter{Introduction}
+Since over 70\% of the world population is predicted to live in cities by 2050 \cite{Weidmann2012}, rapid urbanization and population growth will be inevitable challenges in the effort of planning infrastructure, estimating traffic needs and capacities, and increasing the safety of pedestrians. With the increase in the number of public events and the number of accidents during these events since the crush disaster happened at the Station Nightclub, USA (2003) \cite{Evers2011}, the demand for realistic crowd simulation models becomes important for risk management in urban design and crowd safety. To develop realistic simulation models, various studies have been conducted in order to understand and simulate behaviours which can emerge in both normal and emergency situations such as groups of pedestrians moving with or competing against each other.
+
+Group cohesion behaviour is the behaviour of objects moving towards the average positions of their neighbors over the time \cite{Reynolds1987}. The definition of this behaviour was motivated by the visual observation of coherently flying objects. The behaviour has been investigated widely on the collective motion of different flocking organisms including homing pigeon flocks \cite{Kattas2012}, fish schools \cite{Miller2013}, and bacteria colony \cite{Cisneros2007}. 
+
+Human group cohesion behaviour is observed by its cohesion degree and formation. Cohesion degree denotes the average distance to the group’s centre of mass from each group member while observable human group formations are V-like, line-abreast, U-like, or river-like \cite {Helbing2005}. Group cohesion behaviour is important in both normal and evacuation scenarios. In normal situations, group cohesion behaviour can affect the speed and movement direction of pedestrians who are not belonging to any group. In human behaviour research, the frequency of group cohesion behaviour’s occurrence has been observed at different places in the UK with the percentages of 37\% at train station, 50\% at shopping centre, 28\% at university campus, 50\%, at Clumber Street \cite{Singh2009}. Pedestrians in the same group might be family members, colleagues. In crowd disasters, pedestrians evacuate with group rather than escape individually. Groups of families and friends with strong ties, stay together and evacuate together have been emphasized through socio-psychological research area \cite {Mawson2005}. They may move irrationally to maintain its cohesion and consequently become obstacles for other pedestrians \cite{Aguirre2011}.
+
+\include{litrev} % this causes a page-break, so put the \chapter command in
+				 % the file to be included - I don't know why this happens :(
+
+\chapter{Figures and Tables}
+Here we will test that references to figures and tables work correctly.
+
+\section{Figures}
+\begin{figure}[ht]
+\begin{center}
+\resizebox{100mm}{!}{\includegraphics{dilbert_complexpictures}}
+\end{center}
+\caption{An example of a figure.}
+\label{fig:example}
+\end{figure}
+See Figure~\ref{fig:example}.
+
+\section{Tables}
+\begin{table}
+\begin{center}
+\begin{tabular}{lcr}
+23121 & 1212 & 232 \\ \hline  
+cat & frog & dog
+\end{tabular}
+\end{center}
+\caption{An example of a table}
+\label{tab:example}
+\end{table}
+See Table~\ref{tab:example}.
+
+\subsection{Referencing test}
+See Table~\ref{tab:example} and Figure~\ref{fig:example}.
+
+% another chapter
+\chapter{Method}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+facilisi.
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+commodo consequat.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis.
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr,  At accusam aliquyam diam diam dolore
+dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore
+Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut
+vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+dolor sit amet.
+
+ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+commodo consequat.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis.
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr,  At accusam aliquyam diam diam dolore
+dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore
+Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut
+vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+dolor sit amet.
+
+\appendix % all \chapter{..} commands after this will generate appendices
+
+\chapter{This appendix should get a letter}
+\label{app:example}
+An appendix before the backmatter gets an automatically generated letter by
+which it can be referred to. This is Appendix~\ref{app:example}.
+
+\chapter{Simulation Source Code}
+You may want to investigate the \texttt{lgrind} program and package if you
+wish to include source code in your thesis
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Back matter 
+%%
+
+\backmatter						% start the thesis back matter
+%\begin{thesisauthorvita}
+%\begin{spacing}{1}
+%Publications arising from this thesis include:
+%\begin{description}
+%\item[Author, A.\ and Bloggs, J.\ (2002),]
+%A really catchy title. In \emph{The 31st International Conference
+%on Non-specific Computing.} Capital City, Country.
+%\item[Bloggs, J.\ and Author , A. (2002),]
+%A very much longer and significantly less catchy title. in \emph {Workshop on
+%A Research Area}. Springfield, USA.
+%\end{description}
+%\end{spacing}
+%\end{thesisauthorvita}
+
+\bibliographystyle{dcu} % A good style to use with the Harvard package
+\bibliography{examplebib}
+
+\chapter{Last Thing} % Appendices after the \backmatter command do not
+						% get a letter
+This sort of appendix has no letter. 
+
+
+\end{document}

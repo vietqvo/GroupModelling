@@ -1,0 +1,10 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Daly}{1999}{Dal1999}
+Daly, P.~W.  \harvardyearleft 1999\harvardyearright .
+\newblock Natural sciences citations and references (author--year and numerical
+  schemes), \LaTeX2e package documentation.
+\newblock (last accessed February 7, 2004).
+\newline\harvardurl{http://www.ctan.org/tex-archive/macros/latex/contrib/natbib/}
+
+\end{thebibliography}

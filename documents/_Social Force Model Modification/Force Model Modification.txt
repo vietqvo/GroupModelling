@@ -1,0 +1,49 @@
+1- Force model's general equation (2002) is constructed by Dirk Helbing through observation:
+
+2 - The equation's extension in various aspects:
+	+ Social psychological, group cohesion, communication issues could be represented into functions, parameters
+		+ Social group, or friend  in repulsive force(Xi's model, 2010).
+		+ Walking behaviour of pedestrian social groups (Moussaid & Helbing, 2010).
+	+ Customizable parameters
+		+ Individual personalities _ patience, overtake the person in front while a patient pedestrian will probably slow down and follow (Zhang, 2002)	
+	+ Computational burden when it computes force between pair in simulation
+		+ Interaction force between two particles is only in piecewise linear function based on distance between two particles (distance and nor velocities of them) in 1,5,3 metres. (Heïgeas, 2003)
+		+ Cut off distance and vision range in repulsive force_(Xi's model, 2010)
+	+ Additional parameters towards specific scenarios (panic context, cross-walk)
+		+ (Braun, 2006) - assistance force in panic
+		+ (Zeng, 2014) adds a new avoidance force at cross-walk path
+		+ (Robert, 2009) -Multi agents behaviour in tsunami
+
+3- With the increase of computational power, current crowd simulation try to integrate various factors for pedestrian-agents to simulate more realistic scenarios
+		+(Pelechano, 2006) Roles, Communication, group leader  incorporate with force model, communicate share mental map, follow leaders
+		+(Wijermans, 2013) agent's cognitive information to simulate physiological demands
+		+(Sun, 2014) generic behaviour, define various factors for agent to make the simulation more heterogeneous
+		+(Andrew, 2014) Do-group mater? is the first paper consider about agent in crowd behaviour. Stochastic move to exit or follow leader on agent's decision making is better than
+		average rule using force model in evacuation time. This is the first effort in making agent more heterogeneous.
+	
+However, they haven't considered following aspects:
+	+ Lack the standard validation mechanism describing the effect of parameter's distribution on force's formula in crowd scenarios simulation( mentioned by Sun, 2014, Wijermans, 2013)
+	+ Lack cognitive level, internal process to simulate decision making in force formula. (as the latest survey in crowd modelling - Hoogendoorn, 2013)
+		+Inspired by biological studies on Ant's decision route choice (Loreto ,2013) and fishing school(Couzin, 2013)
+		+Inspired by cognitive level(Wijermans, 2013)
+		
+3- Our interest is at exploring the effect of various values on agent's parameters in simulating crowd phenomena based on force model.	
+	Physical attributes:	
+		3.1 Desired speed, average speed
+		3.2 Body mass
+		3.3	AgentMaxSpeed can be increased or decreased
+		3.4 Adjuster increase and decreased
+		3.5 Expected distance to avoid obstacles
+4- Our study on integrating temporal information, and human experience on force model to simulate
+		4.1 Cognitive level: 
+		4.2 Route directions including exit routes, and its cost
+		4.3 Panic level
+		4.4 Known obstacle positions
+		4.5 Psychological friend-based graph
+
+Current agent's status
+		2.1 x and y coordinate of agent location
+		2.2 dir is the current direction of agent
+		2.3 current speed
+		2.4 defined route for simulation
+	

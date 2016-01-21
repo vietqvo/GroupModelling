@@ -1,0 +1,44 @@
+\chapter{Literature Review}
+
+In this chapter I will demonstrate some of the extended citation
+capabilities provided by the {\sf Harvard} package \cite{WiS1994}. As well
+as supporting the standard \LaTeX\ \verb+\cite+ command, it provides a
+few other very useful ones.
+
+The \verb+\cite+ command is best used when placing a citation at the end of
+sentence or phrase (as above). When you want to refer to the authors of a
+particular work, typically at the start of a sentence, \verb+\cite+ is not
+appropriate. This is particularly so if you are using a numerical or
+symbolic citation style. You should \emph{not} start a sentence with
+\begin{quote}
+[2] says that this is most certainly \ldots
+\end{quote}
+In such situations you really need to give the authors' names. The {\sf
+Harvard} package provides a new command \verb+\citeasnoun+, which allows
+you to produce things like:
+\begin{quote}
+\citeasnoun{Ade1983} describes a means by which textures may be
+characterized \ldots another approach is given in \citeasnoun{DeV1998}.
+
+\citeasnoun{AGR1996} note that humans have little or no difficulty in
+perceiving shape, yet find it extremely difficult to \emph{describe} what
+they perceive.
+\end{quote}
+
+Another useful new command provided by the {\sf Harvard} package is
+\verb+\possessivecite+. This is used when you want to use the authors in a
+possessive sense, as below:
+\begin{quote}
+\possessivecite{AGR1996} experiments with hundreds of three-dimensional scans of human heads suggests that \ldots
+\end{quote}
+Note that an abbreviated version of the authors' names has been used above.
+The {\sf Harvard} package does this automatically after the first citation.
+This behaviour can be overridden if desired.
+
+\paragraph{Note:} The standard {\sf Harvard} package is incompatible with
+\texttt{pdflatex} (via the {\sf html} package). If you want to use the {\sf
+Harvard} package with \texttt{pdflatex}, make sure you use the version
+supplied here (2.0.5a), which has been hacked to remove the problem.
+
+In the long run, {\sf natbib} is probably the better choice. Watch this
+space...

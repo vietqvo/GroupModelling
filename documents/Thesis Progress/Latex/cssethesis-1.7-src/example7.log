@@ -1,0 +1,484 @@
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.10.9)  9 OCT 2015 23:32
+entering extended mode
+**example7.tex
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\cssethesis.cls"
+Document Class: cssethesis 2005/10/18 v1.7 Monash Caulfield and Clayton Schools of Information Technology thesis class
+("C:\Program Files\MiKTeX 2.91\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.91\tex\latex\base\bk11.clo"
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+! Class cssethesis Error: thesis type not specified. Please give a class option to specify the thesis type.
+
+See the cssethesis class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ...thesis, bshonoursthesis,bsehonoursthesis}
+                                                  
+Use, for example, \documentclass[phdthesis]{cssethesis}. Possibilities are: phdthesis, mitthesis, mitminorthesis, mitcou
+rseworkthesis, mcsminorthesis, mdcthesis, bcomphonoursthesis, bcshonoursthesis, bdshonoursthesis, bshonoursthesis,bsehon
+oursthesis
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.91\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.91\tex\xelatex\xetexconfig\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.91\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.91\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+("C:\Program Files\MiKTeX 2.91\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\hour=\count92
+\minute=\count93
+)
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\harvard.sty"
+Package: harvard 
+
+`harvard.sty - harvard bibliography style Version 2.0.5a' <DMS> ("C:\Program Files\MiKTeX 2.91\tex\latex\base\ifthen.sty
+"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)) ("C:\Program Files\MiKTeX 2.91\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.91\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.91\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.91\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+
+Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
+
+)) ("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\mathptmx.sty"
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(C:\Users\quangv\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks16
+\float@box=\box26
+\@float@everytoks=\toks17
+\@floatcapt=\box27
+)
+\@float@every@algorithm=\toks18
+\c@algorithm=\count95
+)
+(C:\Users\quangv\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip43
+\enit@outerparindent=\dimen113
+\enit@toks=\toks19
+\enit@inbox=\box28
+\enitdp@description=\count96
+)
+(C:\Users\quangv\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count97
+\lst@gtempboxa=\box29
+\lst@token=\toks20
+\lst@length=\count98
+\lst@currlwidth=\dimen114
+\lst@column=\count99
+\lst@pos=\count100
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count101
+\lst@lineno=\count102
+\lst@maxwidth=\dimen117
+
+(C:\Users\quangv\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count103
+\lst@skipnumbers=\count104
+\lst@framebox=\box30
+)
+(C:\Users\quangv\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+ ("C:\Program Files\MiKTeX 2.91\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 130.
+ (C:\Users\quangv\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetex-def\xetex.def
+File: xetex.def 2015/09/11 v4.06 LaTeX color/graphics driver for XeTeX (TeX Live/RRM/JK)
+))
+("C:\Program Files\MiKTeX 2.91\tex\latex\apacite\apacite.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count105
+\bibleftmargin=\skip44
+\bibindent=\skip45
+\bibparsep=\skip46
+\bibitemsep=\skip47
+\biblabelsep=\skip48
+)
+
+LaTeX Warning: Unused global option(s):
+    [phdthesis].
+
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.aux"
+
+LaTeX Warning: Label `fig:example' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
+ ("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79134pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08829pt
+* \topmargin=-33.0119pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\big@size=\dimen118
+\c@lstlisting=\count106
+\c@maskedRefs=\count107
+("C:\Program Files\MiKTeX 2.91\tex\latex\apacite\english.apc"
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+File: MonashCrest.pdf Graphic file (type QTm)
+ <use  "MonashCrest.pdf" >
+! Undefined control sequence.
+<argument> \thesistypetypesize \thesistype 
+                                           
+l.37 \thesistitlepage
+                     ^^I^^I^^I^^I% Generate the title page.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \thesisdegreetypesize \thesisdegree 
+                                               
+l.37 \thesistitlepage
+                     ^^I^^I^^I^^I% Generate the title page.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+ ("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.toc"
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\ot1ztmcm.fd"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 1.
+ ("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\omlztmcm.fd"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 1.
+ ("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\omsztmcm.fd"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 1.
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\omxztmcm.fd"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+)
+\tf@toc=\write3
+ [2
+
+]
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.lot")
+\tf@lot=\write4
+ [3
+
+]
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.lof")
+\tf@lof=\write5
+ [4
+
+]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 44.
+
+("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [5] [6]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+[1
+
+
+] [2]
+Chapter 2.
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+! Undefined control sequence.
+l.81 ...,},\ldots where\/ \forall c_{i} \in \tetit
+                                                  {Cell}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 101.
+("C:\Program Files\MiKTeX 2.91\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+Missing character: There is no ’ in font ptmr7t!
+ [3
+
+]
+Missing character: There is no ’ in font ptmr7t!
+ [4]
+Chapter 3.
+File: dilbert_complexpictures.pdf Graphic file (type QTm)
+<use  "dilbert_complexpictures.pdf" > [5
+
+] [6
+
+]
+Chapter 4.
+File: figs/blockage_frequency.pdf Graphic file (type QTm)
+<use  "figs/blockage_frequency.pdf" > [7] [8
+
+]
+Appendix A.
+[9] [10
+
+]
+Appendix B.
+[11] [12
+
+] ("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.bbl") [13
+
+] [14
+
+] [15]
+("C:\CrowdModelling\documents\Thesis Progress\Latex\cssethesis-1.7-src\example7.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4166 strings out of 429025
+ 58883 string characters out of 3167633
+ 130115 words of memory out of 3000000
+ 7352 multiletter control sequences out of 15000+200000
+ 17683 words of font info for 45 fonts, out of 3000000 for 9000
+ 912 hyphenation exceptions out of 8191
+ 42i,8n,32p,1409b,285s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on example7.pdf (21 pages).

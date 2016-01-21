@@ -1,0 +1,17 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: example4.aux
+A level-1 auxiliary file: litrev.aux
+The style file: apacite.bst
+Database file #1: confirmationmonashbib.bib
+I was expecting a `,' or a `}'---line 286 of file confirmationmonashbib.bib
+ :  
+ :  Volume = {254(1)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 295 of file confirmationmonashbib.bib
+ :  
+ :  Volume = {68(2)},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Dal1999"
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+(There were 2 error messages)

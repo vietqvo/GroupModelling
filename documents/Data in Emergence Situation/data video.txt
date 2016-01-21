@@ -1,0 +1,20 @@
+Data of actual crowd lane formation: 
+	https://www.youtube.com/watch?v=J4J__lOOV2E
+	https://www.youtube.com/watch?v=e2WfvJXB__8
+
+Data of real crowd turbulence:
+https://www.youtube.com/watch?v=F6EJnMbyM-M - Helbing for Haji disaster
+https://www.youtube.com/watch?v=BgpdmAtbhbE A Concert in Australian
+https://www.youtube.com/watch?v=xxd_KlaCiNY&feature=player_embedded Love Parade disaster
+
+Data of real stop-and-go-waves:
+https://www.youtube.com/watch?v=muKC5bZezlo
+
+Overall Seyfried's dataset in lab experiment:
+http://www.fz-juelich.de/ias/jsc/EN/Research/ModellingSimulation/CivilSecurityTraffic/PedestrianDynamics/_node.html
+
+Data of crowd bottleneck:
+http://www.fz-juelich.de/ias/jsc/EN/Research/ModellingSimulation/CivilSecurityTraffic/PedestrianDynamics/Activities/database/databaseNode.html
+trajectory with x,y coordination as well.
+
+Description https://loveparade2010doku.wordpress.com/2010/07/28/loveparade-2010-zeitablauf-sperrungen-und-durchlassungen/

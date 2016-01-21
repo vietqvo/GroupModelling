@@ -1,0 +1,56 @@
+Camera Data -> interchangeable pedestrian, over the time, cost, completed capturing views, occlusion
+limitations on validation in fact, cost storing, difficult-to-setup camera surveillance, need human experience to guide evacuation plan dynamic hazardous dangerous environment.
+This is hard combinatorial problem, because we can statistic about its damages but it is difficult to predict, it depends on various factors (human density, current location, damage at where) 
+
+Mobile phone, real-time, lower storing cost, identifiable pedestrian
+
+-in crowd modelling -micro level
+	+ track evacuation route trajectory
+	+ route choice behaviour on cognitive level, 
+	+ physical attributes ( speeds, how desire distance to obstacle), friend physiological force graph
+	
+	Important to scale data for analysing crowd dynamics simulation from collected agents to test whether they are panic (for various infrastructure layout assessment)
+	Important to track evacuation route search space and generate hazard functions
+
+	Validation model:
+			by data collected in two days or two-fold validation approach (divide ahalf to calibrate agent parameter(physical attributes)
+			by ask survey, whether they go on route choice, experience
+	Collect data in real emergence situation:
+	+deploy in various high dense situation, to help us know disaster's properties, or from using reports from other people
+	
+-in crowd modelling -meso level
+	+ monitoring speed, density of micro flows as response function for adaptive cost function
+	
+-in crowd modelling -macro level
+	+check crowd density instead of using camera in cost
+
+	
+-in disaster prevent, dealing with multiple exit, adaptive cost function (on minimize evacuation time, or hazardous information) by exploiting various optimisation techniques
+	
+	+pre-disaster
+		+express search space to raise awareness to people
+		+real-time generate heat map (density) in difficult situation
+		+raise awareness about hazardous congestion vertices and edges
+			+ vertices: most desire when evacuating
+			+ vertices: most desire when de-tour
+			+ edges: the most visited edges of people in building
+	+during disaster
+		+use above hazard functions and real-time data and search space to optimise solutions in dynamic hazardous environment
+		+keep bio- connection and visualize the route without human experience guide
+		
+Case Studies		
+1- pre-disaster prevention in Floor6 FIT Monash
+			+indoor position, density heat-map
+			+show evacuation route search space
+			+raise awareness about search space, (desired implicit and explicit congestion, visiting frequency on edges of human in buildings)
+			+apply ACO to find potential evacuation route at different time table
+			+physical attributes when changing architecture layouts
+			
+2- enhance crowd modelling on micro models in conference forum in 2 days
+			+ route choice behaviour with survey ask whether they are familiar yet
+			+ route choice in 2nd days by artificial obstacles (human) -like Couzin's experiment
+			+ extract human physical attributes
+			+ filtering people has various trajectories and apply whether the model is corrected, satisfy with extracted physical attributes
+			+ assess by simulating with other infrastructure layouts with collected attributes
+			
+3- Simulate real-time again in that conference forum to real-time infer evacuation route and return to agents by turn off ibeacon devices		

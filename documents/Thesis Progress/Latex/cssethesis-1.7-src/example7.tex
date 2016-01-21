@@ -1,0 +1,190 @@
+\documentclass[a4paper,11pt,phdthesis,singlespace,twoside]{cssethesis}
+
+\usepackage{harvard} % Use the Harvard bibliography and citation package
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{mathptmx}
+\usepackage{times}
+
+\usepackage{algorithm}
+\usepackage{enumitem}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{apacite}
+%\usepackage[backend=biber,style=apa,babel=other,maxcitenames=3]{biblatex}
+
+		
+\thesisauthor{Viet Vo}
+\thesisauthorpreviousdegrees{BSc., MSc.} % Optional
+\thesisdepartment{Caulfield School of Information Technology}
+\thesisauthorstudentid{26356988} % Needed for litreview
+\thesisauthoremail{viet.vo\@@monash.edu} 
+
+%\thesismonth{October} % Optional. Current month is used if this is not set
+%\thesisyear{2015} % Optional. Current year is used if this is not set
+\thesistitle{The Effects of Group Member's Parameters on Human Crowd Modelling}
+\thesissupervisor{Prof. Bernd Meyer}
+\thesissupervisoremail{bernd.meyer\@@monash.edu} 
+\thesisassocsupervisor{Dr. Aldeida Aleti} 
+\thesisassocsupervisoremail{aldeida.aleti\@@monash.edu} 
+
+% start the document
+\begin{document}
+
+\frontmatter					% start the thesis front matter.
+
+\thesistitlepage				% Generate the title page.
+%\thesiscopyrightpage			% Generate the copyright page.
+%\thesisdedicationpage			% Generate a dedication page (optional)
+\tableofcontents				% Generate a table of contents.
+\listoftables					% Generate a list of tables (optional).
+\listoffigures					% Generate a list of figures (optional).
+
+\begin{thesisabstract}			% generate the abstract page.
+This thesis introduces 
+\end{thesisabstract}                 
+
+\thesisdeclarationpage			% generate the declaration page (optional).
+
+%\begin{thesisacknowledgments}	% generate the acknowledgements page (optional).
+%I would like to thank everyone who helped to make this possible. It has
+%been an incredible journey of self-discovery, and I love every last one of
+%you\ldots
+%\end{thesisacknowledgments}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Main matter 
+%%
+\mainmatter						% start the thesis body.
+
+\chapter{Introduction}
+Since over 70\% of the world population is predicted to live in cities by 2050 \cite{Weidmann2012}, rapid urbanization and population growth will be inevitable challenges in the effort of planning infrastructure, estimating traffic needs and capacities, and increasing the safety of pedestrians. With the increase in the number of public events and the number of accidents during these events since the crush disaster happened at the Station Nightclub, USA (2003) \cite{Evers2011}, the demand for realistic crowd simulation models becomes important for risk management in urban design and crowd safety. To develop realistic simulation models, various studies have been conducted in order to understand and simulate behaviours which can emerge in both normal and emergency situations such as groups of pedestrians moving with or competing against each other.
+
+Group cohesion behaviour is the behaviour of objects moving towards the average positions of their neighbors over the time \cite{Reynolds1987}. The definition of this behaviour was motivated by the visual observation of coherently flying objects. The behaviour has been investigated widely on the collective motion of different flocking organisms including homing pigeon flocks \cite{Kattas2012}, fish schools \cite{Miller2013}, and bacteria colony \cite{Cisneros2007}. 
+
+Human group cohesion behaviour is observed by its cohesion degree and formation. Cohesion degree denotes the average distance to the group’s centre of mass from each group member while observable human group formations are V-like, line-abreast, U-like, or river-like \cite {Helbing2005}. Group cohesion behaviour is important in both normal and evacuation scenarios. In normal situations, group cohesion behaviour can affect the speed and movement direction of pedestrians who are not belonging to any group. In human behaviour research, the frequency of group cohesion behaviour’s occurrence has been observed at different places in the UK with the percentages of 37\% at train station, 50\% at shopping centre, 28\% at university campus, 50\%, at Clumber Street \cite{Singh2009}. Pedestrians in the same group might be family members, colleagues. In crowd disasters, pedestrians evacuate with group rather than escape individually. Groups of families and friends with strong ties, stay together and evacuate together have been emphasized through socio-psychological research area \cite {Mawson2005}. They may move irrationally to maintain its cohesion and consequently become obstacles for other pedestrians \cite{Aguirre2011}.
+
+Various models have been constructed to understand group cohesion behaviour such as the cellular automata model, the social-force based model, the standard Vicsek model. These models mainly investigate how model’s outputs which are group’s formation, cohesion degree, and speed change when group population size varies, or explore the collective behaviour of flocking organisms at randomly chosen values of model’s parameters. However, they have not investigate systematically model’s input parameters to explore the most influential parameters which control group information, and how group cohesion affect individuals to make them maintain group cohesion. Yet, the impact of group cohesion behaviour caused by model’s parameters on flow rate which is a crucial measurement of crowd modelling also has not been studied in current studies. Therefore, this PhD study aims to resolve these two research gaps by using systematic analysis methods and proposed simulation scenarios when considering group is the collection of members have the same scalar parameter value or different parameter distributions. This work is to advance our knowledge about model’s the most influential parameters for improving real-time prediction systems and calibration works based on these models, and the impact of group cohesion on flow rate measurement for predicting empty and occupied space for evacuation plan.
+
+Chapter 2 of this report represents the state of the art from models trying to understand group cohesion behaviour. Chapter 3 analyses the drawbacks of current models and presents the need of this research study. Chapter 4 presents proposed research questions. Chapter 5 presents research methodology to resolve these questions. Chapter 6 reports the contribution of this study. Chapter 7 reports current working progress and research timeline to answer these questions. Finally, Chapter 8 outlines compulsory research training hours undertaken in the IT faculty.
+
+\chapter{Literature Review}
+
+This chapter reviews current models that have been constructed to understand group cohesion behaviour. Modelling approaches are various from modelling the changes of each cell on a grid layout, investigating social forces that affect each pedestrian’s acceleration, to providing standard Vicsek model which has been applied widely in flocking organisms with fewer parameters to simulate group members.
+
+\section{Cellular automata model for group behaviour}
+Cellular automata-based group behaviour model is the approach relying on Von Neumann’s idea that divides space into uniform grid or hexagonal cells. At each time \textit{t}, variables at each cell are updated according to a set of local rules or its neighbour cells. Common local rules are moving direction, or avoidance rules. Every cell in the space can be in different states including free, an obstacle, or occupied by a pedestrian. General cellular automate model is formed as formulas (2.1-2.3).
+
+\begin{equation}
+Env = c_{0},c_{1},c_{2},c_{3,},\ldots where\/ \forall c_{i} \in \tetit{Cell}
+\end{equation}
+
+\begin{equation}
+neighbours(c) = {(c),S(c),E(c),W(c),NE(c),SE (c),NW(c),SW(c)}
+\end{equation}
+
+\begin{equation}
+State(c)= s \in \left \{Free,Obstacle,Pedestrian_{i}\right \}
+\end{equation}
+
+Every cell has variables of path field, obstacle field, and density field. Path field is to identify distance from current cell to destination cell. Obstacle field indicates for every cell the distance from an obstacle or a wall. Density field is to indicate for each cell the crowd density in the surroundings at the current time step t. When running a CA-based pedestrian model, there is several update strategies including parallel update, sequential update, or shuffled sequential update. 
+
+To simulate group behaviour, \cite{Bandini:2011} constructed pedestrians on these defined cells. A pedestrian is represented as a utility-based agent having following attributes:
+
+\begin{equation}
+Pedestrian: (Id,GroupId,State,Actions,Destination)
+\end{equation}
+where:
+\begin{itemize}
+  \item Id\textendash identification number of pedestrian \textit{i}
+  \item GroupId\textendash identification number of group that pedestrian \textit{i} belongs to
+  \item State\textendash represents pedestrian’s current cell that and direction followed in last movement
+	\item Actions\textendash the set of possible actions to choose an appropriate cell from equations (2.5) and (2.3)
+	\item Destination\textendash reflects current path field of the cell where pedestrian i is in
+\end{itemize}
+
+An utility function \begin{math}U_{t}(c)\end{math}  was proposed by the author as in equation (2.5). The function estimates the probability of cell \textit{c} to allow pedestrian \textit{i} move in to maintain group cohesion at each time step \textit{t}.
+
+\begin{equation}
+U_{t}(c)= \frac{k_{g}G(c)+k_{ob}Ob(c)+k_{s}S(c)+k_{d}D(c)+k_{ov}Ov(c)+k_{c}C_{i}(c)+k_{i}I_{i}(c)}{d}
+\end{equation}
+where:
+\begin{itemize}
+  \item Id\textendash identification number of pedestrian \textit{i}
+  \item GroupId\textendash identification number of group that pedestrian \textit{i} belongs to
+  \item State\textendash represents pedestrian’s current cell that and direction followed in last movement
+	\item Actions\textendash the set of possible actions to choose an appropriate cell from equations (2.5) and (2.3)
+	\item Destination\textendash reflects current path field of the cell where pedestrian i is in
+\end{itemize}
+
+
+\chapter{Figures and Tables}
+Here we will test that references to figures and tables work correctly.
+
+\section{Figures}
+\begin{figure}[ht]
+\begin{center}
+\resizebox{100mm}{!}{\includegraphics{dilbert_complexpictures}}
+\end{center}
+\caption{An example of a figure.}
+\label{fig:example}
+\end{figure}
+See Figure~\ref{fig:example}.
+
+\section{Tables}
+\begin{table}
+\begin{center}
+\begin{tabular}{lcr}
+23121 & 1212 & 232 \\ \hline  
+cat & frog & dog
+\end{tabular}
+\end{center}
+\caption{An example of a table}
+\label{tab:example}
+\end{table}
+See Table~\ref{tab:example}.
+
+\subsection{Referencing test}
+See Table~\ref{tab:example} and Figure~\ref{fig:example}.
+
+% another chapter
+\chapter{Method}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. 
+
+\begin{figure}[ht]
+\begin{center}
+\resizebox{100mm}{!}{\includegraphics[width=0.05\columnwidth]{figs/blockage_frequency.pdf}}
+\end{center}
+\caption{An example of a figure.}
+\label{fig:example}
+\end{figure}
+
+\appendix % all \chapter{..} commands after this will generate appendices
+
+\chapter{This appendix should get a letter}
+\label{app:example}
+An appendix before the backmatter gets an automatically generated letter by
+which it can be referred to. This is Appendix~\ref{app:example}.
+
+\chapter{Simulation Source Code}
+You may want to investigate the \texttt{lgrind} program and package if you
+wish to include source code in your thesis
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Back matter 
+%%
+
+\backmatter						% start the thesis back matter
+\bibliographystyle{apacite}
+\bibliography{confirmationmonashbib}
+
+\chapter{Last Thing} 
+This sort of appendix has no letter. 
+
+
+\end{document}

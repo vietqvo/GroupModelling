@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99c (Web2C 7.4.5)
+The top-level auxiliary file: exampleharvard.aux
+A level-1 auxiliary file: litrevharvard.aux
+The style file: dcu.bst
+Database file #1: examplebib.bib
+You've used 4 entries,
+            2921 wiz_defined-function locations,
+            674 strings with 5597 characters,
+and the built_in function-call counts, 13850 in all, are:
+= -- 2235
+> -- 188
+< -- 0
++ -- 1044
+- -- 56
+* -- 1163
+:= -- 2850
+add.period$ -- 9
+call.type$ -- 4
+change.case$ -- 56
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 53
+empty$ -- 120
+format.name$ -- 73
+if$ -- 2476
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 3
+newline$ -- 22
+num.names$ -- 41
+pop$ -- 18
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 46
+stack$ -- 0
+substring$ -- 3093
+swap$ -- 5
+text.length$ -- 56
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 88
+width$ -- 0
+write$ -- 61

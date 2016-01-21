@@ -1,0 +1,62 @@
+\chapter{Literature Review}
+
+In this chapter I will demonstrate some of the extended citation
+capabilities provided by the {\sf natbib} package \cite{Dal1999}. It
+replaces the standard \LaTeX\ \verb+\cite+ command with two basic forms of
+citation command: \verb+\citep+ and \verb+\citet+, as well as providing
+several other very useful ones.
+
+The \verb+\citep+ command is best used when placing a citation at the end
+of sentence or phrase (as above).  In the {\sf natbib} documentation, this
+is referred to as a \emph{parenthetical citation}.%
+\footnote{For ease of conversion from exisiting \LaTeX\ documents, you
+might find it useful to place
+\texttt{$\backslash$renewcommand\{$\backslash$cite\}\{$\backslash$citep\}}
+in the preamble of the document, since any existing standard
+\texttt{$\backslash$cite} commands should almost certainly be treated as
+\texttt{$\backslash$citep}.}
+
+When you want to refer to the authors of a particular work, typically at
+the start of a sentence, a parenthetical citation is not appropriate. This
+is particularly so if you are using a numerical or symbolic citation style.
+You should \emph{not} start a sentence with
+\begin{quote}
+[2] says that this is most certainly \ldots
+\end{quote}
+In such situations you really need to give the authors' names. The
+\verb+\citet+ command produces \emph{textual citations}, which allows you
+to produce things like:
+\begin{quote}
+\citet{Ade1983} describes a means by which textures may be
+characterized \ldots another approach is given in \citet{DeV1998}.
+
+\citet{AGR1996} note that humans have little or no difficulty in
+perceiving shape, yet find it extremely difficult to \emph{describe} what
+they perceive.
+\end{quote}
+
+Note that an abbreviated version of the authors' names has been produced in
+the third example above.  It is often desirable to have the full list of
+authors' names given when a work  is first cited, and an abbreviated list
+thereafter. This can be achieved by passing the \texttt{longnamesfirst}
+option to {\sf natbib} when the package is used. This will produce
+an initial citation like:
+\begin{quote}
+\citet*{AGR1996} note that humans have little or no difficulty in
+perceiving shape, yet find it extremely difficult to \emph{describe} what
+they perceive.
+\end{quote}
+
+Both the \verb+\citep+ and \verb+\citet+ can take two optional arguments.
+If just one is provided,  its text will appear as a ``post-note'' after the
+citation details. If two arguments are provided, the first defines a
+pre-note, and the second a post-note. Here is an example:
+\begin{quote}
+\verb+\citep[Ch.~3]{AaK1989}+ \ldots{} \citep[Ch.~3]{AaK1989}\\
+\verb+\citep[see][Ch.~3]{AaK1989}+ \ldots{} \citep[see][Ch.~3]{AaK1989}\\
+\end{quote}
+
+These examples only scratch the surface of what the {\sf natbib} package
+can do. To discover the full power of the package, see the documentation at
+CTAN \citep{Dal1999}. You probably already have it on your system. Try
+\verb+locate natbib.dvi+ at the command line.

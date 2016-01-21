@@ -1,0 +1,35 @@
+\contentsline {chapter}{List of Tables}{iv}
+\contentsline {chapter}{List of Figures}{v}
+\contentsline {chapter}{Abstract}{vi}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Literature Review}{3}
+\contentsline {section}{\numberline {2.1}Cellular automata model for group behaviour}{3}
+\contentsline {section}{\numberline {2.2}Social force model for group behaviour}{4}
+\contentsline {section}{\numberline {2.3}Standard Vicsek model of flocking organisms}{7}
+\contentsline {chapter}{\numberline {3}Motivation and Research Questions}{9}
+\contentsline {section}{\numberline {3.1}Problem Statement}{9}
+\contentsline {section}{\numberline {3.2}Research Questions}{10}
+\contentsline {chapter}{\numberline {4}Research Methodology}{11}
+\contentsline {section}{\numberline {4.1}What is the impact of group member's parameters on group cohesion behaviour when group members have the same scalar value on these parameters?}{11}
+\contentsline {subsection}{\numberline {4.1.1}How do group member's parameters affect the model's outputs?}{12}
+\contentsline {subsection}{\numberline {4.1.2}How does group cohesion behavior affect group member’s velocity and direction over the time?}{14}
+\contentsline {section}{\numberline {4.2}How does group cohesion behavior affect flow rates?}{14}
+\contentsline {section}{\numberline {4.3}What is the impact of group member's parameters on group cohesion behaviour and flow rate measurement when group member are heterogeneous in parameter distributions?}{14}
+\contentsline {chapter}{\numberline {5}Research project's contribution}{16}
+\contentsline {chapter}{\numberline {6}Research progress}{17}
+\contentsline {section}{\numberline {6.1}The implementation of social group force model}{17}
+\contentsline {subsection}{\numberline {6.1.1}Simulation Techniques}{17}
+\contentsline {subsection}{\numberline {6.1.2}Parameter initialization and social-group force model output's processing}{17}
+\contentsline {section}{\numberline {6.2}Group cohesion measurement based on group member's parameters}{18}
+\contentsline {subsection}{\numberline {6.2.1}The variance of group cohesion degree}{19}
+\contentsline {subsection}{\numberline {6.2.2}The variance of group average speed}{20}
+\contentsline {subsection}{\numberline {6.2.3}The variance of group average velocity direction}{22}
+\contentsline {subsection}{\numberline {6.2.4}Summary}{23}
+\contentsline {section}{\numberline {6.3}Research Timeline}{24}
+\contentsline {chapter}{\numberline {7}Coursework and professional development}{25}
+\contentsline {chapter}{Appendix\ A\ Sensitivity Analysis Methods}{26}
+\contentsline {chapter}{Appendix\ B\ The impact of setting different parameter distributions for pedestrian types}{27}
+\contentsline {section}{\numberline {B.1}Parameter distribution initialization for pedestrian types}{27}
+\contentsline {section}{\numberline {2.2}Simulation Scenarios}{28}
+\contentsline {section}{\numberline {2.3}Escape rate and pedestrian left frequency analysis}{29}
+\contentsline {chapter}{References}{33}

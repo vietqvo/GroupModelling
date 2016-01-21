@@ -1,0 +1,289 @@
+This is e-TeX, Version 3.14159-2.1 (Web2C 7.4.5) (format=latex 2005.5.3)  18 OCT 2005 15:20
+entering extended mode
+**cssethesis.dtx
+(./cssethesis.dtx
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, catalan, croatian, czech, danish, dutch, finnish, greek, iceland
+ic, irish, italian, latin, magyar, norsk, norsk, portuges, romanian, russian, s
+lovak, slovene, spanish, swedish, turkish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/ltxdoc.cls
+Document Class: ltxdoc 1999/08/08 v2.0u Standard LaTeX documentation class
+*************************************
+* Local config file ltxdoc.cfg used
+*************************************
+(/usr/share/texmf/tex/latex/config/ltxdoc.cfg
+File: ltxdoc.cfg 2001/06/05 v1.0 teTeX: LaTeX documentation setup
+)
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/base/doc.sty
+Package: doc 2001/05/16 v2.0n Standard LaTeX documentation package (FMi)
+\c@StandardModuleDepth=\count87
+\guard@level=\count88
+\MacrocodeTopsep=\skip43
+\MacroIndent=\dimen103
+\macro@cnt=\count89
+\MacroTopsep=\skip44
+\index@excludelist=\toks14
+
+(/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2000/07/10 v1.5z multicolumn formatting (FMi)
+\c@tracingmulticols=\count90
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count91
+\c@collectmore=\count92
+\doublecol@number=\count93
+\multicoltolerance=\count94
+\multicolpretolerance=\count95
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip45
+\multicolbaselineskip=\skip46
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count96
+\c@finalcolumnbadness=\count97
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+\IndexMin=\dimen112
+\c@IndexColumns=\count98
+\GlossaryMin=\dimen113
+\c@GlossaryColumns=\count99
+\check@sum=\count100
+\bslash@cnt=\count101
+\wrong@table=\toks15
+\c@CodelineNo=\count102
+))
+\@indexfile=\write3
+\openout3 = `cssethesis.idx'.
+
+
+Writing index file cssethesis.idx
+\@glossaryfile=\write4
+\openout4 = `cssethesis.glo'.
+
+Writing glossary file cssethesis.glo 
+(./cssethesis.aux)
+\openout1 = `cssethesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+Package doc Info: Made | a short reference for \verb on input line 202.
+ (./cssethesis.dtx
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 144.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 144.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 144.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 154.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 154.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 206.
+ [1
+
+]
+Overfull \hbox (217.93518pt too wide) in paragraph at lines 230--230
+ [][]\OT1/cmtt/m/n/9 \ProvidesClass{cssethesis}[2005/10/18 v1.7 Monash Caulfiel
+d and Clayton Schools of Information Technology thesis class] 
+ []
+
+[2] [3]
+Overfull \hbox (10.0376pt too wide) in paragraph at lines 443--443
+ [][]\OT1/cmtt/m/n/9 \newcommand{\thesisdegree}{Master of Information Technolog
+y (Minor Thesis)} 
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 443--443
+ [][]\OT1/cmtt/m/n/9 \newcommand{\thesisdegree}{Master of Information Technolog
+y (Coursework)} 
+ []
+
+[4] [5] [6]
+Overfull \hbox (4.7956pt too wide) in paragraph at lines 508--513
+\OT1/cmr/m/n/10 re-quires the macro []\OT1/cmtt/m/n/10 \@normalsize \OT1/cmr/m/
+n/10 to be de-fined. But the def-i-ni-tion of []\OT1/cmtt/m/n/10 \@normalsize
+ []
+
+
+Overfull \hbox (47.83716pt too wide) in paragraph at lines 559--559
+ [][]\OT1/cmtt/m/n/9 \RequirePackage[paper=a4paper,left=30mm,width=150mm,top=25
+mm,bottom=25mm]{geometry} 
+ []
+
+[7]
+Overfull \hbox (57.28705pt too wide) in paragraph at lines 623--623
+ [][]\OT1/cmtt/m/n/9 \newcommand*{\thesisauthorpreviousdegrees}[1]{\gdef\@thesi
+sauthorpreviousdegrees{#1}} 
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 623--623
+ [][]\OT1/cmtt/m/n/9 \newcommand*{\thesisauthorstudentid}[1]{\gdef\@thesisautho
+rstudentid{#1}} 
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 623--623
+ [][]\OT1/cmtt/m/n/9 \newcommand*{\thesissupervisoremail}[1]{\gdef\@thesissuper
+visoremail{#1}} 
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 623--623
+ [][]\OT1/cmtt/m/n/9 \newcommand*{\thesisassocsupervisor}[1]{\gdef\@thesisassoc
+supervisor{#1}} 
+ []
+
+
+Overfull \hbox (47.83716pt too wide) in paragraph at lines 623--623
+ [][]\OT1/cmtt/m/n/9 \newcommand*{\thesisassocsupervisoremail}[1]{\gdef\@thesis
+assocsupervisoremail{#1}} 
+ []
+
+[8]
+Overfull \hbox (1.01839pt too wide) in paragraph at lines 626--628
+\OT1/cmr/m/n/10 These com-mands are usu-ally fine as is. They may be changed us
+-ing []\OT1/cmtt/m/n/10 \renewcommand
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 656--656
+ [][]\OT1/cmtt/m/n/9 \newcommand{\thesistitlebold}{\textbf{\thesistitletypesize
+\@thesistitle}} 
+ []
+
+
+Overfull \hbox (28.93738pt too wide) in paragraph at lines 656--656
+ [][]\OT1/cmtt/m/n/9 \newcommand{\thesisstudentbold}{\textbf{\thesisstudenttype
+size \thesisstudent}} 
+ []
+
+[9] [10] [11]
+Overfull \hbox (10.0376pt too wide) in paragraph at lines 816--816
+ [][]      \OT1/cmtt/m/n/9 \copyright\ Copyright \\ by \\ \thesiscopyrightholde
+r \\ \@thesisyear 
+ []
+
+[12]
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 902--902
+ [][]    \OT1/cmtt/m/n/9 submitted in any form for another degree or diploma at
+ any university 
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 902--902
+ [][]    \OT1/cmtt/m/n/9 the published and unpublished work of others has been 
+acknowledged in 
+ []
+
+[13]
+Overfull \hbox (28.93738pt too wide) in paragraph at lines 935--935
+ [][]    \OT1/cmtt/m/n/9 examiners and has received full approval for acceptanc
+e \thesisfulfillment\ 
+ []
+
+[14]
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 1050--1050
+ [][]\OT1/cmtt/m/n/9 % Some older versions of LaTeX2e (older than Dec. 1994) de
+fine \l@chapter 
+ []
+
+[15]
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 1081--1081
+ [][]       \OT1/cmtt/m/n/9 typeset with \LaTeXe\footnote{\LaTeXe{} is an exten
+sion of \LaTeX. 
+ []
+
+
+Overfull \hbox (5.31265pt too wide) in paragraph at lines 1081--1081
+ [][]       \OT1/cmtt/m/n/9 trademark of the American Mathematical Society.  Th
+e macros used in 
+ []
+
+
+Overfull \hbox (90.36166pt too wide) in paragraph at lines 1081--1081
+ [][]       \OT1/cmtt/m/n/9 by Glenn Maughan and modified by Dean Thompson and 
+David Squire of Monash University. 
+ []
+
+
+Overfull \hbox (0.5877pt too wide) in paragraph at lines 1112--1112
+ [][]\OT1/cmtt/m/n/9 % Updated in v1.5 using more recent code from book.cls, 20
+00/05/19 v1.4b. 
+ []
+
+[16]
+Overfull \hbox (246.28485pt too wide) in paragraph at lines 1159--1159
+ [][]\OT1/cmtt/m/n/9 \newcommand\@numberword[1]{\ifcase#1 zero\or one\or two\or
+ three\or four\or five\or six\or seven\or eight\else nine\fi\relax} 
+ []
+
+) [17] (./cssethesis.aux) ) 
+Here is how much of TeX's memory you used:
+ 574 strings out of 95370
+ 6861 string characters out of 1188186
+ 61668 words of memory out of 1000001
+ 3678 multiletter control sequences out of 10000+50000
+ 10345 words of font info for 37 fonts, out of 500000 for 1000
+ 198 hyphenation exceptions out of 1000
+ 30i,6n,21p,268b,342s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on cssethesis.dvi (17 pages, 45384 bytes).

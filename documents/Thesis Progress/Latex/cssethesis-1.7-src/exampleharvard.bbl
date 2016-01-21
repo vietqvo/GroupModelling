@@ -1,0 +1,31 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Ade}{1983}{Ade1983}
+Ade, F.  \harvardyearleft 1983\harvardyearright .
+\newblock Characterisation of textures by ``eigenfilters'', {\em Signal
+  Processing} {\bf 5}:~451--457.
+
+\harvarditem[Atick et~al.]{Atick, Griffin \harvardand\ Redlich}{1996}{AGR1996}
+Atick, J.~J., Griffin, P.~A. \harvardand\ Redlich, A.~N.  \harvardyearleft
+  1996\harvardyearright .
+\newblock The vocabulary of shape: principal shapes for probing perception and
+  neural response, {\em Neural Computation} {\bf 7}(1):~1--5.
+
+\harvarditem{De~Bonet \harvardand\ Viola}{1998}{DeV1998}
+De~Bonet, J.~S. \harvardand\ Viola, P.  \harvardyearleft 1998\harvardyearright
+  .
+\newblock Texture recognition using a non-parametric multi-scale statistical
+  model, {\em Proceedings of the 1998 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR'98)}, Santa Barbara, California, USA.
+\newline\harvardurl{http://www.ai.mit.edu/\~{}jsd/research/publications/1998/D%
+eBonet-CVPR98.pdf}
+
+\harvarditem{Williams \harvardand\ Schnier}{1994}{WiS1994}
+Williams, P. \harvardand\ Schnier, T.  \harvardyearleft 1994\harvardyearright .
+\newblock The {H}arvard family of bibliography styles, \LaTeX2e package
+  documentation.
+\newblock (last accessed February 7, 2004).
+\newline\harvardurl{http://www.ctan.org/tex-archive/macros/latex/contrib/harva%
+rd/}
+
+\end{thebibliography}

@@ -1,0 +1,57 @@
+Exploring newly real-time collectable data from mobile to enhance current theoretical models to applicable model for real disaster prevention purpose.
+
+Primary question: What are newly collectable data to enhance current model?
+
+1. What is current crowd model on micro, macro levels?
+	Micro: force, CA, ABM, force-agent model to resolve problem of force(physical attribute,force affect, route choice, behavior). Inspired by biological route choice (school fish, ant)
+	Macro: network, continuum
+	
+2. What data has been used in current models, how they enhance current model?
+	From camera approach:
+		2009_Data Driven for Crowd Modelling
+		2011_Consequence of Turning Movements during emergency crowd egress
+		2012_Detection and Simulation of Dangerous Human
+		2014_Route Choice Modelling and Runtime optimisation for Simulation
+		Standford_ http://eig.stanford.edu/safegress/
+	Show exactly parameters can't be collected in real-time.
+	
+	Or just detection abnormal behaviour based on force models.
+		2011_Analyzing Pedestrian Behaviour in Crowds for Automatic Congestion Detection
+		2013_Hydrodynamic lens
+		
+	These data make detected pedestrian interchangeable, can't illustrate experience or cognitive level, hard to environment, setup, cost	
+
+3. What are newly collectable data making current model more robust and powerful? How they enhance current models?, 
+	+ force-agent based model: identifiable, cognitive level (mental map, friend-graph), illustrate physiological force- force more clearly, collected then repeatedly for simulation in various infrastructure and crowd dynamics, route choice for layout design assessment
+	+ meso: real-time density, average velocity in micro-flows wrapping as response function for evacuation plan in cost function
+	+ macro: real-time density
+	+ Give out the computational implementation framework
+4. How to validate the force-agent model?
+	+ by real-observation, in n-fold validation, give out the architecture for validation, http://eig.stanford.edu/safegress/index.html, matrices will be compare with fact
+	+ by survey, ask whether they go on route choice, experience
+	
+5. How to manage vast collected data in real-time?
+	+Big data architecture
+	
+6. How to setup experiment on social aspect? 
+	Ask by survey: experience or not, and then perform calibrate, present case studies in Monash, Conference, shopping mall in high-dense
+		+ To make the application more interesting:
+		  Real-time: Heat map of density, find friend's location
+		  Long-time: potential hazardous, frequent visit, search space, your frequently nearby friend.
+		  
+7. Is there a chance to collect data in real-emergence situation when camera hasn't been setup?
+	+ Deploy in places where easily occur disasters
+	+ Stress fact model, revised from normal model, receive information, feedback from other people in different disaster happened including ship, aviation, oil, fire
+	+ Read about Disney RnD, ask person's survey, scripts to modify models with happened disasters by their agent
+	+ Example as 2014_Development of an Open-Source Mobile in Data Collection for Disaster
+	+ Read about Data Collection from Netherlands
+	+ Read about Oxford_ http://eig.stanford.edu/safegress/
+
+8. How does collected data and modified model help on disaster prevention (in crowd simulation on various layout, on evacuation plan -route search space, risky, potential hazardous, convex)
+	dealing with multiple floors
+Contribution:
+		-Novel Data for crowd dynamic research community
+		-Validation area since current state of the art only focus on calibrate and manually perform trajectory
+		-Optimisation techniques for evacuation plan
+		-Disaster prevention utility: design layout assessment from collected agent, evacuation route search space, real-time crowd context
+		

@@ -1,0 +1,719 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% A sample thesis using the cssethesis class
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Preamble
+%%
+
+\documentclass[a4paper,11pt,phdthesis,singlespace,twoside]{cssethesis}
+% * Include the option "pdflatex" above if you want to use pdflatex rather than
+% standard latex to compile your document
+% * Include the option "litreview" above if this is a literature review.
+% * Include the option "nocoursecode" so that the numerical course code is
+% suppressed after the course name.
+% * Include the option "oneside" if you don't want formatting for two-sided
+%   printing.
+% * Include option "thesisdraft" to get a timestamp and "Draft" message in
+%   the footer
+% * Include option "thesispsdraft" to get a timestamp and "Draft" message in
+%   the footer, along with a grey "DRAFT" in the margin. Note: this only
+%   works with latex, not pdflatex
+
+%\usepackage{natbib} % Use the natbib bibliography and citation package
+%\bibpunct{(}{)}{;}{a}{,}{,} % use more standard Harvard punctuation
+%\renewcommand{\cite}{\citep} % often a useful short-cut
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{times}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{sidecap}
+\usepackage{enumitem}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\usepackage{t1enc}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{enumitem}
+\usepackage{color,soul}
+
+\usepackage{caption}
+\usepackage[bookmarks,backref=true,linkcolor=black]{hyperref} %,colorlinks
+% Definitions needed by the cssethesis class. See the documentation for
+% others
+\thesisauthor{Vahan Yoghourdjian}
+\thesisauthorlastname{Yoghourdjian}
+\thesisauthorpreviousdegrees{BSc., MSc.} % Optional
+\thesisdepartment{Caulfield School of Information Technology} % Optional.
+%                  Clayton School of Information Technology is the default
+\thesisauthorstudentid{260} % Needed for litreview
+\thesisauthoremail{Vahan.Yoghourdjian\@@monash.edu.au} % Optional. Note that the @ is
+											 % given as \@@. This is not
+											 % necessary in normal LaTeX,
+											 % but it is if you use the
+											 % amsmath package - so why not
+											 % get into the habit?
+%\thesismonth{July} % Optional. Current month is used if this is not set
+%\thesisyear{2002} % Optional. Current year is used if this is not set
+\thesistitle{High-Quality Layout of Network Diagrams using Combinatorial Optimization Techniques}
+\thesissupervisor{Dr. Tim Dwyer, Prof. Kim Marriott, Dr. Michael Wybrow}
+\thesissupervisoremail{\{Tim.Dwyer, Kim.Marriot, Michael.Wybrow\}\@@monash.edu.au} % Optional
+
+
+\thesisassocsupervisor{Dr. Karsten Klein} % Optional
+\thesisassocsupervisoremail{Karsten.Klein\@@monash.edu.au} % Optional
+\thesisdedication{} % Optional
+
+% start the document
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Front matter 
+%%
+\frontmatter					% start the thesis front matter.
+
+\thesistitlepage				% Generate the title page.
+\thesiscopyrightpage			% Generate the copyright page.
+\thesisdedicationpage			% Generate a dedication page (optional)
+\tableofcontents				% Generate a table of contents.
+\listoftables					% Generate a list of tables (optional).
+\listoffigures					% Generate a list of figures (optional).
+
+\begin{thesisabstract}			% generate the abstract page.
+%This thesis introduces \ldots
+%Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy
+
+%Networks are used to model and represent relational data in numerous different domains and disciplines. The information in many application areas is conveyed and based on specific structures and is associated with semantics and annotations.
+%%Visualizing these networks allows understanding and analyzing the underlying data. Many networks have a specific structure or pattern that needs to be conveyed in the diagrams. There are many algorithms that lay out network diagrams, each based on different layout characteristics. 
+%Visualizing these networks plays an important role in finding patterns and gathering important information about the underlying data. Current methods for visualizing networks use fast heuristics, since laying out network diagrams is a hard problem (NP-hard). However in doing so, they compromise the quality of the layout and fail to achieve layouts that resemble human-generated ones. Many studies have been done to explore the readability and comprehension of network diagrams. There is a rich literature on metrics to measure network layout characteristics and assess their influence on efficiency. On the other hand, combinatorial optimization, which has witnessed tremendous advances in the near past, is used to solve problems where a set of constraints need to be respected and a certain cost function needs to be optimized. Laying out high-quality network diagrams is such a problem, but has not fully benefited from the advances in this area. 
+%%However the latter is a hard problem and needs fast heuristics to scale to large networks; especially that many current networks consist of hundreds, thousands, and even hundreds of thousands vertices.
+%We aim to use combinatorial optimization techniques to lay out high-quality network diagrams that possess characteristics which are common in human-generated layouts. Furthermore we will validate the efficiency of the produced layouts by conducting a user study based on task performance.
+%%resemble layouts generated by human-generated 
+%%This report will present a research plan for my PhD studies. It will identify current gaps in the automatic drawing of quality network diagrams and consequently propose a novel approach that will use combinatorial optimization techniques in order to tackle these problems. The approach will be enforced with characteristics that have been studied to have high correlations with layout quality. The work, herein, will consist of a feasibility study, a review, algorithm engineering, and a user study. 
+
+Networks are used to model and represent relational data in numerous different domains and disciplines. Visualizing these networks plays an important role in finding patterns and understanding the underlying data. Current methods for network visualization use heuristics for layouts developed many decades ago. While fast, these methods compromise the quality of the layout and fail to achieve layouts that resemble human-generated ones. This thesis aims to address this deficiency. Our starting points are the many user studies previously conducted to explore the various factors that affect readability and comprehension of network diagrams. We will review this rich literature in order to identify what makes a high-quality human-like layout. The major component of the thesis will be to develop new algorithms that produce such high-quality network layouts. In order to achieve this we will use generic combinatorial optimization techniques. When the first methods for network layout were being developed, such generic optimization techniques were slow and impractical. However since then optimization has witnessed tremendous advances and we will explore whether these techniques can now be used as a practical tool for high-quality network layout.  We will validate our approach by measuring the efficiency of the layout algorithms and conduct user studies to evaluate the effectiveness of the layouts.
+\end{thesisabstract}                 
+
+%\thesisdeclarationpage			% generate the declaration page (optional).
+
+%\begin{thesisacknowledgments}	% generate the acknowledgements page (optional).
+%I would like to thank everyone who helped to make this possible. It has
+%been an incredible journey of self-discovery, and I love every last one of
+%you\ldots
+%\end{thesisacknowledgments}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Main matter 
+%%
+\mainmatter						% start the thesis body.
+
+\chapter{Introduction and Motivation} \label{intro}
+\let\cleardoublepage\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WHAT IS NETWORK VISUALIZATION AND WHAT IT DOES
+Network diagrams are commonly used to visualize relational data, since the network structure easily reveals pairwise relationships between objects. 
+Networks consist of vertices (nodes) which represent the objects and edges (links) which represent the relationship between pairs of vertices. 
+Network visualization provides a comprehensive insight into complex relationships, can reveal unexpected patterns, and  allows this information to be effectively communicated \cite{kohlhammer2011solving}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WHAT IS THE PROBLEM
+However network layout is an extremely difficult problem. Finding a layout that minimizes edge crossings alone is NP-hard \cite{eades1986edge}. It follows that arranging layouts, with more features to consider, is difficult to say the least.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figs/layeredflow.pdf}
+\end{center}
+\caption{An example of a layered layout of a biological pathway with flow. The flow direction is left to right and this diagram has six vertical layers. Taken from http://www.pathwaycommons.org}
+\label{fig:layeredflow}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%APPLICATION OF NETWORK DIAGRAMS
+Network diagrams are used in many application areas, including life sciences (Figures \ref{fig:ne3}, \ref{fig:ne4}, \ref{fig:ne5}), software and electrical engineering (Figure \ref{fig:ne2}), business and finance, social sciences (Figure \ref{fig:lesmis}), telecommunication (Figure \ref{fig:ne1}), etc. 
+The underlying data can have different characteristics, which can be represented either by using different layout styles or by using additional attributes and annotations. The style of the layout is defined by the way vertices and edges are placed and represented. Different combinations of edge routing and node placement conventions, and whether or not the graph has directed edges leads to different layout styles. Figure \ref{fig:layeredflow} shows an example of a directed network with a left to right flow. Figure \ref{fig:hierarchy} shows an example of a layered layout with straight line edges. More examples of layout styles are shown throughout this report. Figures \ref{fig:ne2}, \ref{fig:ne3}, \ref{fig:ne4}, and \ref{fig:ne5} show examples of special attributes and annotations, such as node shape and color, edge thickness and color, and clustering. 
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{figs/hierarchy.png}
+\end{center}
+\caption{A layout showing a hierarchy with four levels. Taken from \cite{sugiyama1981methods}}
+\label{fig:hierarchy}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%GAP
+Virtually all of the currently used algorithms for network layout are based on specialized heuristic methods developed many decades ago. These were devised when computers were not powerful enough to handle layouts of even quite small networks. 
+While these methods are fast, they are of poor quality when compared to human-generated network layouts \cite{kieffer2015hola}. Furthermore, they rely on layout features that the designers intuitively believed to result in readable and efficient diagrams, but this intuition was not based upon user studies as at that time noone had conducted any.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%MY RESEARCH AIM
+This document presents our research plan, which aims to develop an algorithm that produces high-quality human-like network layout. In order to achieve this, we need to identify features that enhance the quality of network layouts and include them within our algorithm. We will validate the quality of the produced layouts.
+
+\begin{figure}
+\centering
+
+\subfigure[An email communication network taking into account institute affiliations \cite{baur2009group}. This example shows two kinds of layout styles; force-directed and circular. Straight-lines are used to draw the the edges and a circular layout style is used for placing the vertices.]{\includegraphics[width=0.4\columnwidth]{figs/ne1.pdf}\label{fig:ne1}}
+\subfigure[An orthogonal layout of a state chart \cite{sponemann2010port}. This example shows a layout where the edges are directed and flow left to right. An orthogonal layout means that the edges are drawn using horizontal and vertical straight-line segments.]{\includegraphics[width=0.7\columnwidth]{figs/ne2.pdf}\label{fig:ne2}}
+
+
+\subfigure[A  biological cell network which shows the use of many different graphical features, such as color, different sections, node shapes, labels, and different edge styles \cite{merico2009visually}. Orthogonal drawing is used for the edges. The minimum number of crossings allows us to see the structure, but the long edges make it hard to follow paths between vertices.]{\includegraphics[width=0.7\columnwidth]{figs/ne3.png}\label{fig:ne3}}
+\caption{examples of network diagrams}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WHAT ARE LAYOUT FEATURES
+The most commonly considered layout features, when considering the quality of a network diagram, are to minimize the number of crossings and edge bends, evenly distribute vertices and edges, show symmetry, maximize compactness, etc. However in virtually all existing methods only a few of these features are explicitly taken into consideration while other similarly important ones are neglected. For example, many methods focus on edge routing while neglecting content emphasis and compactness \cite{Yoghourdjian2015high}.
+
+Since the tradeoffs between many of these layout features are at tension with each other, methods that arrange network diagrams have to weight the features. An example of such a contradiction is shown in Figure \ref{fig:contradictory}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figs/contradictory.png}
+\end{center}
+\caption{This network can either be drawn as the left one, with uniform edge lengths and symmetry, but with crossings, or as the right one, which is without any crossing, but also without symmetry or uniform edge lengths.}
+\label{fig:contradictory}
+\end{figure}
+
+		A salient gap in network visualization is the lack of a unified understanding of the influence of layout features on the quality of network diagrams and the tradeoff between them. Many surveys evaluate the effects of layout features on task efficiency \cite{purchase1996validating}\cite{purchase2002metrics}. Others evaluate the layouts produced with common algorithms \cite{himsolt1995comparing}\cite{purchase1998performance}. However many of these studies overlap and the results are not fully beneficial. There is a need to review the research done, in order to gather these studies uniformly and filter out the appropriate and desired layout features of network diagrams.
+		
+		In order to develop our layout algorithm, we will conduct a review of the research done into identifying features that positively affect the quality of network layout. We will design our algorithm to optimize quality with respect to such features.
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%WHAT TO USE
+Combinatorial optimization deals with declaring, analyzing and finding optimal solutions to problems that have finite sets of solutions. The aim is to find the solution that maximizes an objective function and which satisfies a finite set of constraints. There are several generic methods to solve combinatorial optimization problems, such as Mixed Integer Programming (MIP) \cite{MILPcom}, Constraint Programming (CP) \cite{CPcom}, and Boolean Satisfiability (SAT) \cite{middendorf2013evolutionary}.
+
+Combinatorial optimization techniques are used to solve a wide variety of problems including the traveling salesman \cite{huysentruyt2015applying}\cite{mladenovic2012general}, bin packing \cite{MILPcom}, scheduling, and other problems \cite{paschos2013paradigms}. In principle they can be used to solve network layout problems; however these methods have not typically been used in network visualization due to the limitations in the computational power of early computers. 
+
+Recent technologies have brought forth massive improvements in computing power. Furthermore combinatorial optimization techniques have advanced tremendously. There are state-of-the-art medium and high level languages \cite{minizinc} that can be used to model combinatorial optimization problems, which can then be solved using several different solvers \cite{cplex}\cite{metodi-bee}\cite{feydy2013semantic}. The solvers have also witnessed a wide range of improvements. Examples include the advances in pre-processing techniques \cite{lima2011computational}, the creation of different parameters to direct the solving process based on different problem types \cite{cplex}, and the availability of automatic and manual selection methods to decide upon these parameters \cite{xu2011hydra}. 
+
+Generic combinatorial optimization techniques offer two main benefits to network layout over the traditional specialized heuristic approach. First, flexible modeling allows for easy inclusion of all of the desired layout features and to experiment with them when computing a layout. It also allows us to experiment with different layout styles; domain or application specific constraints can easily supplement an existing model, while others can be discarded. Second, most combinatorial optimization methods can solve to optimality; this guarantees an optimal solution is reached, which is not the case for any existing method.
+
+\begin{figure} 
+\centering
+\subfigure[A force-directed layout of protein interaction. Node colors, sizes and edge thickness provide different information about the network \cite{nagasaki2010cell}. The straight-line drawing convention is used for the edges and makes it easy to follow links between nodes (vertices). However the number of crossings makes it hard to see any structure.]{\includegraphics[width=0.7\columnwidth]{figs/ne4.png}\label{fig:ne4}}
+
+
+\subfigure[Regulatory cell cycle using the LK-Grid Layout \cite{li2005grid}. A straight-line drawing convention is used for the edges and a grid layout style is used for placing the vertices. The grid layout leads the eye comfortably \cite{brockmann1981grid} and allows a clear understanding of the structure.]{\includegraphics[width=0.7\columnwidth]{figs/ne5.png}\label{fig:ne5}}
+
+\caption{examples of network diagrams}
+%\label{fig:neb}
+\end{figure}
+	
+	\begin{figure}
+\centering
+\subfigure[A small-world network. Vertices represent characters from les miserables. Drawn using a force-directed approach \cite{webcola}. The straight-line drawing convention is used for the edges.]{\includegraphics[width=0.8\columnwidth]{figs/les_mis_fd.pdf}\label{fig:lesmisfd}}
+\subfigure[The same network as in Figure \ref{fig:lesmisfd}, but an edge compression is applied, which groups vertices that share neighbors, as described in \cite{dwyer2013edge} and vertices are placed on grid points. Orthogonal drawing is used for the edges, in contrast to the LK-grid method shown in Figure~\ref{fig:ne5}, thus minimizing the number of edge-edge crossings. Furthermore, node-edge crossings are not allowed.]{\includegraphics[width=0.8\columnwidth]{figs/lesmis_fdgs.png}\label{fig:lesmisfdgs}}
+\end{figure}
+\begin{figure}
+\ContinuedFloat
+\centering
+\subfigure[The same network as in Figure \ref{fig:lesmisfd} and \ref{fig:lesmisfdgs} achieved using our combinatorial optimization technique \cite{Yoghourdjian2015high}. It favors compaction and stress minimization, in addition to the previous characteristics of Figure~\ref{fig:lesmisfdgs}.]{\includegraphics[width=1\columnwidth]{figs/lesmis_lns.png}\label{fig:lesmislns}}
+%\end{center}
+\caption{The same network drawn using three different layout methods. Force-Directed with constraints \cite{dwyer2006ipsep}. Force-Directed with grid-snap \cite{kieffer2013incremental}. Our method \cite{Yoghourdjian2015high} to produce High-Quality Ultra-Compact Grid Layout, which is discussed in Chapter~\ref{progress}.}
+\label{fig:lesmis}
+\end{figure}
+
+As the first step in the research project we have conducted a feasibility study to evaluate whether it is in fact sensible to consider generic combinatorial optimization for network layout. The results were very promising and this led to a publication in IEEE InfoVis A* rated conference.
+
+This report is structured in the following way: Chapter \ref{litrev} will provide brief background information and relevant research regarding the topic and identify major gaps. Chapter \ref{proposal} will state our proposal in the form of research questions, research methodology, and future work. Finally, Chapter \ref{progress} will discuss current progress.
+
+% another chapter
+\chapter{Background and Literature Review} \label{litrev}
+
+In this Chapter we will review three main topics. The most common methods for automatic drawing of network diagram will be presented in Section \ref{tec}. Studies into what makes a high-quality network diagrams and the metrics used to measure the quality will be discussed in Section \ref{aes}. Lastly in Section \ref{com} we will talk about the recent advances in combinatorial optimization and its prior use in network layout.
+
+\section{Automatic Drawing of Networks} \label{tec}
+
+	Network layout algorithms take as input a graph (network)\footnote{The terms network and graph are used interchangeably in this report.} $G = {V,E}$ and produces a visual representation. $V$ is a set of vertices and $E$ is a set of edges. Each edge is a pair $(u,v)$, where $u \in V$ and $v \in V$. 
+	
+	Computer scientists, graphic designers, and others have been searching for efficient ways to automatically draw diagrams in order to represent the underlying information in the best possible way for many decades \cite{tamassia2013handbook}. The network layout problem in itself is a hard problem, hence initial research was dedicated to find heuristics and fast approaches to draw network diagrams. A parallel branch of research tried to draw smaller graphs but with higher quality.
+
+In order to achieve good layouts, researchers have proposed several layout features that should be present in network diagrams. Most of the existing methods try to minimize crossings, minimize bends, display symmetries, distribute nodes uniformly, keep edge lengths uniform and keep the overall layout compact. We will discuss layout quality and features in more details in Section \ref{aes}. In the following paragraphs, we will introduce some of the most famous methods for drawing network diagrams and the main features of the respective layouts.
+
+In addition to layout features, each method is associated with a specific layout style. As stated in Chapter \ref{intro}, the ways in which nodes and edges are placed and represented defines the layout style. Different combinations of edge routing and node placement styles and the presence (or not) of directed edges lead to different layout styles. Two common node placement styles include, placing nodes on the perimeter of a circle (circular layout) or placing them on grid points that have integer coordinates (grid layout). Curves or straight-lines are common edge routing styles. Another method widely used to draw edges is called orthogonal layout, where each edge consists of either vertical or horizontal segments.
+
+The force-directed approach is one of the earliest proposed methods for network layout. It was initially suggested by Tutte \cite{tutte1963draw} to obtain layouts of a subset of 3-connected planar graphs. Tutte's algorithm generates layouts that are crossing free and where the faces are convex \cite{kobourov2012spring}. The force-directed approach was used by Eades \emph{et al.} in order to distribute vertices evenly across the canvas. This was achieved by imagining the vertices to be metal balls connected to each other by springs. The metal balls are pulled outwards, then freed and they will return to a good position. There are also the possibility of forces of repulsion and attraction between the nodes. Kamada and Kawai presented a new model where Hooke’s law was taken into consideration and the model was based on exact formulas \cite{kamada1989algorithm}, but this led to a scalability problem. Fruchterman and Reingold decided to ignore the physical reality of the repulsion and attraction forces, since the model does not have to be physically realistic \cite{fruchterman1991graph}. In their model, they make sure that nodes are evenly distributed, edge lengths are uniform and there exists inherent symmetries. 
+The benefits brought forth with the latter three characteristics degrade as the graphs get larger in size, as seen in Figure \ref{fig:ne4}. Furthermore, the number of crossings, especially in dense graphs, makes it hard to see the underlying structure. Nonetheless, it is still one of the most widely used approaches, mainly due to its simplicity and speed. The force-directed approach is usually paired with straight-line drawing of edges.
+
+In many cases the relationships between vertices are directed and this can be conveyed in a layout that shows some sort of flow. Sugiyama \emph{et al.} proposed a multi-stage approach to arrange graphs with minimum number of crossings and respect hierarchies through a layered layout \cite{sugiyama1981methods}; e.g. Figures \ref{fig:Sugiyama} and \ref{fig:layeredflow}. During the first stage, a physical hierarchy is formed. The second stage deals with getting rid of cycles. The third stage gets rid of long edges by adding dummy vertices. The fourth stage deals with replacing vertices in each level of the hierarchy to achieve minimum number of crossings. Vertices are moved again in the fifth stage, in order to achieve secondary characteristics, such as straight lines and proximity. In the final stage, dummy nodes are removed and long edges are reinstated.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{figs/Sugiyama.png}
+\end{center}
+\caption{A layered layout of a hierarchical network showing the method proposed by Sugiyama \emph{et al.}\cite{sugiyama1981methods}.}
+\label{fig:Sugiyama}
+\end{figure}
+
+Batini \emph{et al.} presented a way to arrange networks in an orthogonal layout style \cite{batini1986layout}. Their method is widely used and is known as Topology-Shape-Metrics (TSM). It is incremental and consists of three main steps. Planarization, which is the first step, minimizes edge crossings and the external boundaries. Orthogonalization, which is the second step, minimizes the number of bends. Grid embedding, which is the third and final step, minimizes the global length of edges and the area of the smallest rectangle covering the diagram. The three steps deal with three sets of characteristics, namely topology, shape and metrics. The Topology-Shape-Metrics method minimizes number of crossings, number of bends, and the total area of the drawing.
+
+Most graph drawing methods that rely on Topology-Shape-Metrics algorithms arrange the nodes on a grid \cite{kieffer2015hola}\cite{batini1986layout}. Grid arrangements make the diagrams memorable\cite{marriott2012memorability} and lead the eye comfortably \cite{brockmann1981grid}. They are abundantly used by designers in typographical layouts, where a viewing space is divided into regular cells. Also people who draw graphs manually prefer to use grid-layout \cite{purchase2012graph}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figs/TSM.png}
+\end{center}
+\caption{Topology-Shape-Metrics. Orthogonal layout initially proposed by Batini \emph{et al.} \cite{bertolazzi2000computing}.}
+\label{fig:TSM}
+\end{figure}
+
+Simulated Annealing \cite{gendreau2010handbook} is a meta-heuristic technique that was more recently introduced for network layouts. It is named after the chemical transformation of crystals into their solid forms and involves a gradual cooling of temperature in order to yield the best shapes. Davidson and Harel proposed to use it in network layout \cite{davidson1996drawing}. The objective function is calculated based on the following layout features: even distribution of nodes, compactness, uniform edge length, and minimum number of crossings. However the approach was too slow and would scale only to small sized graphs.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figs/simulated.png}
+\end{center}
+\caption{A network layout with straight-line edges and no crossings achieved using the simulated annealing meta-heuristic technique \cite{davidson1996drawing}.}
+\label{fig:simulated}
+\end{figure}
+ 
+Network layout techniques can be summarized into two main categories. Algorithms that use heuristics (force-directed and simulated annealing) and ones that use multi-step pipeline methods (Sugiyama's, TSM). Whereas these methods yield fair outcomes, the final results show potential for further improvements as seen in Figures \ref{fig:ne3} and \ref{fig:ne4}. Some of the main gaps in the existing methods for network layout are that they are based on specific layout styles, they do not solve to optimality, and are not flexible enough to include additional layout features.
+
+\section{Quality of Network Diagrams} \label{aes}
+
+The methods described in Section \ref{tec} were designed to layout features that were based on the intuitions of the designers. It was only after these methods were developed that that researchers started using scientific methods to define and study layout features and quality.
+
+Some researchers measure quality based on subjective preference, which can depend on individual preference and application area. Others are concerned with measuring how memorable the layout is, especially in dynamic drawings and cases which involve interactivity \cite{bridgeman1998difference},\cite{marriott2012memorability}. While other researchers study the effectiveness of the diagram is by measuring the presence of layout features and their influence on task performance, which depends on the chosen tasks.
+
+Some studies focused on assessing algorithms, since virtually all algorithms are associated with some specific layout features. Himsolt conducted an experiment on layout algorithms found in GraphEd \cite{himsolt1995comparing}. He compared algorithms based on the layout features they handle, the restrictions on the characteristics of the input graphs, and their time performance. He also did a visual preference rating by assigning a higher score to layouts he preferred. He concluded that traditionally used features for layout and their rankings must change, and existing algorithms should be revised in order to be more flexible.
+
+Purchase has conducted several experiments to find metrics to measure the quality of network diagrams. In one of her earliest works, Purchase \emph{et al.} conducted a task-based user study in order to assess the influence of three layout features, namely crossings, bends and symmetry \cite{purchase1996validating}. The participants were asked to perform the following tasks; identify the shortest path between two given vertices, the minimum number of vertices that need to be removed to eliminate paths between two given vertices, and the minimum number of edges that need to be removed to eliminate paths between two given vertices. They concluded that the number of crossings and bends have a large influence on quality; but that the results do not show any conclusive relation between symmetry and task performance. In another work, Purchase evaluated the performance of layout algorithms based on task performance \cite{purchase1998performance}. She conducted a user study and asked the participants to perform the three former tasks on a single graph drawn using eight different layout algorithms.
+
+In later works, Purchase increased the number of studied layout features studied to seven and formulated ways to measure their presence in network diagrams \cite{purchase2002metrics}. The seven features were number of crossings and bends, symmetry, minimum angle, orthogonality, and upward flow. These metrics can be used to either evaluate already drawn graphs, or can be used to formulate a cost function for algorithms that perform optimization. Purchase argued that the decision should be about the weight of each layout feature, rather than simply excluding or including features. In another work, she studied the influence of the most common layout features and layout algorithms on task performance \cite{purchase2004evaluating}. 
+
+Similarly, Ware \emph{et al.} studied the effect of six layout features \cite{ware2002cognitive}, namely continuity, number of crossings and angle of crossings, number of branches, shortest path length, total geometric line length, and total crossings in the graph on the cognitive quality of the diagrams. They did this by conducting a task evaluation on a set of graphs, where users were asked to find the shortest path between two marked vertices. They concluded that the number of bends had a stronger effect on the task than the number of crossings.
+
+Nguyen \emph{et al.} proposed a new way to measure the quality of diagrams \cite{nguyen2013faithfulness}. In addition to using the traditional readability metrics, they suggested measuring a new term called `faithfulness'. The motivation behind this was that different graphs need to be arranged using different types of layouts. Whereas Huang used an eye-tracking method as an addition to the three tasks commonly used to evaluate layouts \cite{huang2007using}.
+
+Other than assessing existing layout algorithms and predefined features. Many researchers have attempted to identify features that are not found in layouts produced by existing methods but are preferred by humans and widely used in human-generated diagrams. Ham and Rogowitz asked users to rearrange the vertices of given network diagrams to achieve graphs that best represented the data structure \cite{ham2008perceptual}. In addition they measured cluster separability, extraction, distance, and delineation. They concluded that the layouts produced by the participants where highly structured and had less crossings, but did not care much about uniform edge lengths. 
+Dwyer \emph{et al.} conducted a study similar to the former; however in addition to slight differences in the methods of the experiment, they did a user study to compare the task performance on user generated layouts and automatically generated layouts with three different styles \cite{dwyer2009comparison}. 
+Inspired by the two previous works, Purchase \emph{et al.} did a full experiment with detailed methods and several steps to understand how humans perceive high-quality layout \cite{purchase2012graph}. Kieffer \emph{et al.} developed an algorithm that takes into consideration layout features discovered through user studies done on human-generated orthogonal layouts \cite{kieffer2015hola}.
+
+Other researchers have studied the tradeoff between layout features. Huang \emph{et al.} argued that different algorithms that try to improve one or two different layout features produce layouts with similar quality \cite{huang2010improving}. Thus they suggested that algorithms would be more effective and yield better layouts if they took into consideration several features and enhanced each to a possible extent. In order to test their claim, they compared two force-directed methods. The first being a classical spring algorithm, and a new method called BIGANGLE. The latter took into consideration additional forces to increase \emph{crossing angles} and improve \emph{angular resolution}. They measured seven layout features and deduced that BIGANGLE performed better than the classical method. They also conducted a user study and asked participants to find the shortest path between two vertices and showed that the tasks on layouts produced by BIGANGLE yielded better performance. But similar work by Fruchterman and Reingold \cite{fruchterman1991graph} and Davidson and Harel \cite{davidson1996drawing} on force-directed algorithms did not have the same impact. This can be due to the fact that the performance of force-directed methods, as explained in section \ref{tec}, is not consistent. It can also be that the modifications in the latter works were not significant enough \cite{huang2010improving}. 
+
+Huang and Huang studied the tradeoff between two layout features \cite{huang2010exploring}, namely the number of crossings and the angles of crossings. They claimed that the number of crossings plays one of the most important roles in terms of task performance and cognitive qualities of diagrams. They also concluded that in case the number of crossings cannot be fully eliminated, the angles of crossings play an important role on the quality of the layout.
+
+In conclusion, there is a lot of work done in studying the correlation between human-preferred and algorithm-based layout features and the quality of network diagrams on one hand, and the tradeoff between these features on the other. However, these works are scattered and unorganized. In order to have a better understanding, avoid repeating the same experiments, and to advance the field, it is important to conduct an extensive review of the literature.
+
+\section{Combinatorial Optimization} \label{com}
+
+Combinatorial Optimization deals with problems where an optimal combination of decisions must be made on a set of variables, while satisfying a set of constraints. Mixed Integer Programming (MIP) \cite{MILPcom}, Constraint Programming (CP) \cite{CPcom}, and Boolean Satisfiability (SAT) \cite{codish2008logic} are three generic methods for solving combinatorial optimization problems. 
+
+MIP models are made up of a set of linear equations as constraints and a linear objective function. The decision variables can be real or integer. Common combinatorial optimization problems that can be formulated using MIP are the knapsack, bin-packing, set partitioning and set covering, minimum cost flow, maximum flow, transportation, assignment, and shortest path problems \cite{MILPcom}.
+
+CP models are more flexible and contain generic constraints. Decisions are made until all variables are decided upon or the problem is found to be infeasible. A propagator ensures that the constraints are satisfied \cite{CPcom}.
+
+SAT models are made up of a set of propositional formulas in conjunctive normal form (CNF). A SAT solver tries to find truth assignments to these literals that satisfy the disjunctions of these literals (clauses) and the overall conjunctions of these clauses.\cite{codish2008logic}.
+
+An optimization problem is often described as a model with input parameters, decision variables, constraints that must be satisfied, and an objective function that is either minimized or maximized. In the case of network layout problems, multiple layout features can be expressed as soft constraints, and can be optimized to desired extents using coefficients to weight the different features.
+
+Many of the methods and algorithms presented above in Section \ref{tec} use combinatorial optimization partially in their approach. Batini \emph{et al.} used it to minimize the number of crossings \cite{batini1986layout}. Klau \emph{et al.} used it to enhance compaction \cite{klau99}. Sugiyama \emph{et al.} used it to minimize bends \cite{sugiyama1981methods}. Dwyer \emph{et al.} used it to enforce a minimum separation between vertices \cite{dwyer2006ipsep}. The main limitation for not using generic combinatorial optimization methods has mainly been due to performance limitations.
+
+Combinatorial Optimization techniques have advanced in the recent years. We shall use MIP as an example to show some of the improvements in the area. Other generic methods have been similarly improved. The main advances in MIP have occurred with the following techniques \cite{lima2011computational}: pre-processing,  probing, search heuristics, branch and cut (B\&C) parallelization, and branch and bound (B\&B). Lima \emph{et al.} evaluate the effect of these enhancements on two classic problems and report massive improvements in terms of time \cite{lima2011computational}.
+
+State-of-the-art MIP solvers have many parameters that could configure the solver to enhance the performance in specific circumstances. IBM ILOG CPLEX Optimizer, which is a popular MIP solver, has 165 parameters \cite{cplex}. Users are not expected to tune the solver manually; most solvers have built-in auto-tuning tools and there are several portfolio-based selection tools. Similar to Cplex's auto-tuning tool there are external configuration selection tools that function independent of the solvers. \emph{HYDRA} \cite{xu2011hydra} is an example of such a tool, which claims to outperform most of the state-of-the-art configuration selection tools, including Cplex's auto-tuning tool.
+
+Computing power has also advanced tremendously in the last two decades. The average memory of personal computers in 1995 was 4-8MBs, whereas nowadays it's 4-8GBs. Processing power has had a jump as well with 200MHz\footnote{http://www.intel.com/pressroom/kits/quickrefyr.htm\#1996} processors in 1996 to 4.2GHz\footnote{http://ark.intel.com/products/family/88392/6th-Generation-Intel-Core-i7-Processors\#@Desktop} processors with multiple cores in 2015.
+
+In addition to improvements in solver techniques, enhancements have occurred at the level of designing the model. Previously the models were encoded using low level clauses, but in time new higher level \cite{minizinc} modeling languages have been developed. Models are becoming even more declarative, thus allowing the solver to handle the most efficient way of solving it \cite{beldiceanu2007global}. 
+
+Many decision problems in diverse fields, where optimizing characteristics of the final results are desired, benefit from the advances in combinatorial optimization techniques. Network visualization fits perfectly into this category but has yet to benefit from these improvements.
+
+Sometimes the problems are too hard to be solved in a reasonable amount of time. In such cases heuristics can be used to speed up the optimization. Heuristics can dramatically enhance the solving time with relatively small effort, but do not guarantee optimal solutions and lead to approximate solutions that are often good enough. 
+Meta-heuristics are top-level strategies that guide the use of underlying heuristics to solve a given problem. Simulated annealing, Neighborhood Search, Greedy Randomized Adaptive Search, The Pilot Method, Tabu Search, and others are examples of meta-heuristics \cite{voss2001meta}.
+
+We aim to employ combinatorial optimization techniques to holistically find network layouts by taking into account several characteristics that positively influence the quality.
+
+\chapter{Research Proposal and Schedule} \label{proposal}
+\section{Research Questions}
+\subsection{Can we use combinatorial optimization techniques to create high-quality network diagrams?}
+
+Our main question leads to the following two sub-questions.
+
+\begin{itemize}
+\item What is a high-quality layout for a network diagram?
+
+Different metrics have been tailored to measure the quality of network diagrams. As discussed in Section \ref{aes}, a rich body of literature assesses the quality of network layout and the effects of different features on it.
+We will comprehensively review this literature in order to have a better understanding of what enhances the overall quality of network layout and the tradeoffs between these features.
+
+Consequently we will be able to answer the following two questions.
+
+\begin{itemize}
+
+\item What are the features that enhance the quality of a network diagram and what are the tradeoffs between them?
+
+\item Are there layout styles that humans use that are not achievable using current methods?
+
+The studies on human-generated layout will give us an insight on layout features that are neglected by current methods, yet appear in human-generated diagrams.
+
+\end{itemize}
+
+\item How to create such diagrams using combinatorial optimization techniques?
+
+Our intuition led us to believe that combinatorial optimization techniques are advanced enough to handle layout problems efficiently. We have already experimented with some of these techniques in the work described in Chapter \ref{progress}. 
+
+Based on the results from our initial experiment and the deductions of quality metrics from the review mentioned above, we follow to design and develop an algorithm that uses generic combinatorial optimization methods and answer the following sub-questions.
+
+\begin{itemize}
+\item Do these techniques allow human-like layout styles not supported by current methods?
+
+\item How do these techniques compare to existing methods in terms of scalability and quality of results?
+
+\item Do these techniques allow us to create high-quality network layouts in a reasonable time?
+
+\end{itemize}
+\end{itemize}
+We will evaluate the results in four ways:
+\begin{itemize}
+\item We will compare the scalability and flexibility of our methods to existing heuristic based layout methods.
+\item In addition to layout features commonly used in existing methods, our model will include features identified to be used in human-generated layouts. We will use metrics to measure the presence of these human-like features in layouts produced by our methods and compare them to manually arranged layouts.
+\item We will use metrics to measure the presence of desired layout features that highly influence quality. We will compare these measurements to ones done on layouts produced by existing methods.
+\item We will also do a user study to validate the effectiveness of our proposed layout. The user study will evaluate two factors; user preference and task performance.
+\end{itemize}
+
+In order to answer the questions mentioned above, the research will be divided into four main phases: feasibility study, literature review, algorithm design and development, and user evaluation.
+
+%\section{Research Methods and Research Plan}
+\section{Research Methodology}
+
+\subsection{Algorithm Engineering}
+We will use algorithm engineering to design and develop our algorithm for network layout.
+Algorithm Engineering is a technique to design and develop algorithms for combinatorial optimization problems \cite{chimani2010algorithm}. It starts with a design phase, followed by analysis, implementation, and experimental evaluation. The results of the last three phases can be used to improve the algorithm design and repeat the cycle. Algorithm engineering bridges the gap between asymptotically and practically efficient algorithms.
+
+We will evaluate the algorithm by measuring the presence of desired features in the layouts produced using our algorithm. We will then compare the measurements to the presence of these features in layouts produced using existing methods and human-generated ones. 
+
+In addition to the quantitative approach, we will validate the effectiveness of layouts produced by the algorithm using user evaluation. The user evaluation will compare layouts produced by our newly developed algorithm with layouts produced by already existing heuristic methods. It will also compare our layouts to human-generated ones. It will be lab-based, since we would like to avoid inaccuracies, lack of engagement, multiple submissions and drop-outs, resulting from web-based studies \cite{bbc}. Furthermore the controlled environment of the study will make the demographic information of the participants available \cite{purchase2012graph}. Some participants will be familiar with the topic; however there will be a brief training and introduction prior to the actual tasks. Designing the tasks will be influenced by the tasks performed in \cite{dwyer2009comparison},\cite{purchase2012graph},\cite{kieffer2015hola}. The duration of each task will depend on the complexity of the tasks. Tasks will be evaluated based on correctness and performance time.
+
+\section{Research Plan}\label{plan}
+
+\subsection{Feasibility Study [Completed]}
+The feasibility study has already been done and is discussed rigorously in Chapter \ref{progress}. This study was done in order to test our hypothesis that combinatorial optimization methods can be used to solve network layout problems. We designed a network layout that includes several features, specifically maximizing compactness and minimizing stress. We evaluated the time performance of three well known solvers on our model and deduced that generic combinatorial optimization methods can be used for optimally arranging layouts of small networks. We then compared the layout to ones produced by a few commonly used methods and noticed improvements in features that are often associated with layout quality.
+We also used a novel meta-heuristic technique to arrange layouts of larger networks in reasonable time. These layouts were not optimal, but had an improved measure of the desired features compared to ones produced by existing methods.
+
+The work was accepted to be presented at IEEE InfoVis 2015.
+
+\subsection{Literature Review of Network Layout Quality}
+We will conduct a review on research that has studied the influence of layout features on quality, the tradeoff between different features, features of human-generated layouts, and metrics to measure layout features. 
+
+Through the review we will identify features that have a high influence on quality and the respective metrics to measure their presence in different layouts.
+
+We plan to submit the review for publication in a top ranking journal.
+
+\subsection{Algorithm Design and Development}
+
+We will design and develop a customizable algorithm that uses combinatorial optimization techniques to lay out network diagrams. The algorithm will ensure that the features which have a positive effect on layout quality are maximized and the ones that hinder the quality are minimized.
+
+We will then implement this algorithm and run it on state-of-the-art solvers. We will evaluate the performance of the algorithm in terms of scalability, simplicity, and flexibility. We will follow an incremental process and re-design the algorithm as necessary.
+
+We will verify the correctness of the algorithm by declaring whether it produces an optimal solution based on the defined objective, or a near optimal solution and define its range.
+
+We will assess the quality of the produced layouts using metrics to measure the presence of features and compare the measurements to ones acquired from layouts of the same graphs that were arranged using existing methods.
+
+We plan to submit the work and its findings to InfoVis papers 2017.
+
+\subsection{User Evaluation}
+We will do user studies to evaluate the effectiveness of the produced layouts on task performance. We will also evaluate user preference by asking users to choose between layouts produced by our algorithm and layouts arranged by already existing methods.
+
+The literature review will guide us through the design phase of the user studies and the selection of tasks.
+
+We plan to submit the results of the user study to PacificVis papers 2018.
+
+\section{Timeline}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\columnwidth]{figs/timeline.png}
+\caption{Timeline for future work}
+\label{fig:timeline}
+\end{figure}
+
+Figure \ref{fig:timeline} shows a timeframe for the work described in this Chapter. Prior to my mid-candidature review I will have finished the literature review to be done on studies concerned with characteristics of the quality of network layout and will have started developing and improving the layout algorithm. These will be two separate chapters of my thesis. The review will be submitted to be published in a relevant high ranking journal; whereas the final algorithm and its initial evaluation will be submitted as a paper to IEEE InfoVis 2017. 
+
+Another chapter of my thesis will describe user studies done to evaluate the efficiency of the layouts produced by our algorithm. The user studies will be finished by June 2017 and the results will be submitted to either PacificVis 2018 or CHI 2018 papers. After that I will spend a few months to write the thesis.
+
+In addition to these submissions and possible publications, we intend to present this research proposal at a Doctoral Colloquium, preferably before starting with the algorithm engineering.
+
+\chapter{Current Progress} \label{progress}
+
+The work described in this chapter was accomplished in collaboration with Tim Dwyer, Graeme Gange, Steve Kieffer, Karsten Klein, and Kim Marriott. It was compiled in a paper titled “High-Quality Ultra-Compact Grid Layout of Grouped Networks”, which was accepted to IEEE InfoVis 2015 an A* rated conference, to be held in October. 
+\section{Ultra-Compact Grid Layout}
+We had an intuition that combinatorial optimization techniques can achieve a good layout for network diagrams. The work described in this Chapter was completed in order to verify the assumption that using combinatorial optimization techniques can achieve high-quality network diagrams. We focused on producing compact grid-like layouts of network diagrams, since this layout style is not handled well with current existing methods and is used quite commonly by humans and graphic design.
+
+We designed the layout to meet the following requirements \cite{Yoghourdjian2015high}:
+
+\begin{itemize}
+\item Node content emphasis. Many application areas have more information than mere labels associated with the nodes. In typography the grid cells and objects are packed densely to allocate more area to the content; whereas, in orthogonal network diagrams the objects are typically placed sparsely in order to devote more space for routing and allow more room for bend and crossing minimizations. Figures \ref{fig:flowexample}, \ref{fig:composers}, \ref{fig:tetris}, and \ref{fig:statemachine} show examples where significant text and graphic content are associated with the nodes. Evident through the provided examples, our compact node-placement allows these content to be readable without the need for interactive zooming and focus-and-content techniques \cite{harel1995randomized}. 
+
+\item Proximity implies connectivity. As the first criteria enforces less space to be devoted for edge paths, a need to place adjacent nodes close to each other rises. Furthermore, recent studies \cite{dwyer2006ipsep} show that layouts where adjacent nodes are placed close to each other are strongly preferred by readers of small diagrams. In addition, this requirement leads to a crossing minimization, since shorter edges can lead to fewer crossings. In some cases minimizing edge length can be more successful at minimizing crossings than using methods and heuristics to address the issue directly \cite{dwyer2013edge}.
+
+\item Variable node dimensions. In addition to having lengthy labels and other content, some nodes can have more than others. Typography achieves this by allowing content to extend over a few grid cells; nonetheless, the rule being that they fully fill a rectangular set of grid cells. Furthermore, the model should allow different orientations of nodes, where text needs to be placed next to or under an image and the model should decide on the best orientation for each node. Figure \ref{fig:composers} demonstrates an example of variable node sizes and orientations.
+
+\item Containment. In typography group membership or sets of information are shown through nested rectangular enclosures. Our model will allow containments that might overlap with other containments that can be nested.
+
+\item Flow. Some information has a flow of direction associated with the relationships between the nodes. We will support this by allowing flow to be shown in multiple directions. for instance, left-to-right or top-to-bottom as shown in figure \ref{fig:flowexample}.
+
+\end{itemize}
+
+\begin{figure}
+\centering
+\hspace*{\fill}%
+\subfigure[An example of a directed biological pathway network laid out in 2.035 secocnds using the SAT solver.]{\includegraphics[width=0.4\columnwidth]{figs/flowexample.pdf}\label{fig:flowexample}}\hfill%
+\subfigure[An example showing the variable node size characteristic. Solved in 37.422 seconds using the SAT solver.]{\includegraphics[width=0.4\columnwidth]{figs/composers.pdf}\label{fig:composers}}%
+\hspace*{\fill}%
+\end{figure}
+\begin{figure}
+%\centering
+\hspace*{\fill}%
+\subfigure[Solved in 0.732 seconds using the SAT solver.]{\includegraphics[width=0.4\columnwidth]{figs/tetris.pdf}\label{fig:tetris}}\hfill%
+\subfigure[Solved in 0.464 seconds using the SAT solver.]{\includegraphics[width=0.4\columnwidth]{figs/statemachinewithkey.pdf}\label{fig:statemachine}}%
+\hspace*{\fill}%
+\caption{Examples of our compact grid-like layout \cite{Yoghourdjian2015high}}
+\label{fig:currentexamples}
+\end{figure}
+
+
+\section{Layout Model}
+We formulated a high-level declarative model for placing nodes in a grid layout accompanied with the above mentioned aesthetic requirements \cite{Yoghourdjian2015high}.
+A great benefit of using a constrained optimization approach is that it allows the addition of additional constraints to enhance additional layout characteristics. Figure \ref{fig:composers} demonstrates an example where we added constraints to dictate that the perimeter of nodes could either be 2x1 or 1x2 for base nodes. Figure \ref{fig:flowexample} shows another example where a source node is forced to be placed either above or to the left of the adjacent destination node.
+The optimization problem that we tackle with our model is NP-hard and can be proven by a reduction from the rectangle packing problem \cite{kojima2007efficient}.
+
+\section{Node placement model} \label{themodel}
+The parameters or the inputs to the high-level model for node-placement are the following:
+\begin{itemize}
+\item a set of nodes which comprises of 
+\begin{itemize}
+\item leaf or base nodes
+\item container nodes
+\end{itemize}
+\item a fixed width and height for every base node. These are positive integers.
+\item A containment relationship between a container and a set of nodes, these could be base nodes or container nodes. The containment relationship does not have to be hierarchical.
+\item A non-overlap relationship between nodes, which ensures that base nodes and some containers do not overlap.
+\item A non-negative desired distance and a non-negative weight between each pair of nodes. The weight equates to 0 if any of the pair is contained in the other.
+\item Maximum number of columns and rows of the grid. These non-negative integers need to be assigned in a way to make sure that the space is big enough to contain the optimal layout.
+\end{itemize}
+		The containment and non-overlap relationship matrices should be minimal for efficiency.
+
+		\subsection{Variables and constraints}
+\begin{itemize}
+\item Since our problem is mostly concerned with placement, the core variables in our model are the position variables. top-left position of each node u is given by $(xs[u], ys[u])$.
+\item The bottom-right position of each node u is given by $(xf[u],yf[u])$, which is functionally dependent upon and  calculated by: $xf[u]=xs[u]+wd[u]$ and $yf[u]=ys[u]+ht[u]$. 
+\item Every node should fit in the grid boundary. 
+\item The position and size of each container node is functionally dependent on the position and size of the base nodes it contains. The containers are tight bounding boxes of their constituents.
+\item If a pair of nodes $(u,v)$ should not overlap then the following disjunction should be true:
+		$xf[u] \leq xs[v]$ or $xf[v] \leq xs[u]$ or $yf[u] \leq ys[v]$ or $yf[v] \leq ys[u]$
+\end{itemize}
+		\subsection{Objective function}
+$stress + \alpha cc + \beta oc$
+The components of the objective function are $stress$, $cc$, and $oc$. The $\alpha$ and $\beta$ are fixed weights to give priorities to the components in the objective function.
+The $stress$ is the difference between the desired distance specified as input and the actual distance calculated after placement. The distance is calculated by measuring the Manhattan distance between the closest points of the perimeter of the nodes.
+$stress = \sum_{u,v \in B \cup C} ddw[u,v] \cdot  | dx[u,v]+dy[u,v]-dd[u,v] |.$
+The two other components of the objective function deal with compactness. 
+$cc = \sum_{u \in C} w[u] + h[u]$
+$cc$ assures the compartments are compact.
+$oc \ge xf[u]$
+$oc$ makes sure the entire layout is compact and that it fits inside a rectangle with an assigned aspect ratio 
+$ar$: $yf[u] \le ar \cdot oc$
+
+A sample CP encoding of the model is found in the Appendix \ref{app:CP}.
+
+\section{Routing}
+We initially tried to use a single model for both node-placement and edge routing, but this proved too slow and we found it to be impractical. Therefore we developed a separate heuristic algorithm for edge routing given the positions of the nodes.
+The grid-like layout suggests orthogonal-style connectors. Crossings between edges and nodes should be avoided, unless the node is the source or target of the edge. In the case of containers, an edge should only intersect with a container boundary if it connects a node inside the container, or the container to a node, or container outside of the container.
+
+\section{Evaluation}
+We evaluated the use of the three most widely used generic techniques for solving discrete constrained optimization problems; namely Mixed Integer Programming \cite{MILPcom}, Constraint Programming \cite{CPcom}, and SAT \cite{codish2008logic}.
+
+The experiments were run on a standard desktop machine with an Intel Core i7-4771 3.50GHz processor and 32GB RAM. The solvers were restricted to one thread and a time out of 300 seconds. 
+
+We used different types of graphs for our input data in order to study the performance of our model encoding on different graph characteristics \cite{Yoghourdjian2015high}. These were from two sources, a set of randomly generated scale-free graphs, and a set of graphs acquired from real-world instances. An edge-compression heuristic \cite{dwyer2014improved} was applied to these graphs, which produced two new sets of graphs. In total we have run the experiments on a graph corpus of 1040 graphs and the corresponding 1040 edge-compressed power-graphs.
+
+%The weights of the objective function’s components can be tailored to fit the expectations of different users. For our experiments we assigned the stress component with a weight of four, the compartment compactness with a weight of two ($\alpha = 1/2$), and the overall compactness with a weight of three ($\beta = 3/4$).
+
+\begin{table}[h] \small \centering \begin{tabular}{l|r|r|r|r|r|r|}  \cline{2-7}                                    & \multicolumn{3}{c|}{\textbf{edge-compressed}}                                                                                             & \multicolumn{3}{c|}{\textbf{flat-graph}}                                                                                              \\ \cline{2-7}                                    & \multicolumn{1}{c|}{\textit{\textless 3s}} & \multicolumn{1}{c|}{\textit{\textless 1m}} & \multicolumn{1}{c|}{\textit{\textless 5m}} & \multicolumn{1}{c|}{\textit{\textless 3s}} & \multicolumn{1}{c|}{\textit{\textless 1m}} & \multicolumn{1}{c|}{\textit{\textless 5m}} \\ \hline \multicolumn{1}{|l|}{\textbf{MIP}} & 7                                          & 9                                          & 11                                         & 7                                          & 9                                          & 11                                         \\ \hline \multicolumn{1}{|l|}{\textbf{CP}}  & 15                                         & 16                                         & 25                                         & 13                                         & 16                                         & 25                                         \\ \hline \multicolumn{1}{|l|}{\textbf{SAT}} & 25                                         & 38                                         & 57                                         & 18                                         & 24                                         & 36                                         \\ \hline \end{tabular} \caption{The highest nodes count of graphs solved by MIP, CP, and SAT; categorized into three timeframes. It is clear that SAT performed best, followed by CP, with MIP having the worst performance for both power-graphs and flat-graphs \cite{Yoghourdjian2015high}.} \label{table:solverresults} \end{table}
+
+The largest size of graphs in terms of number of nodes solved by MIP, CP, and SAT were categorized into three timeframes; less than three seconds, less than a minute, and less than five minutes. The SAT solver had the best performance for both power-graphs and flat-graphs; solving up to 36 node flat-graphs under five minutes, followed by CP, and leaving MIP with the worst performance.
+
+The results of the experiments showed that the SAT solver was capable of solving graphs of up to 60 nodes, while CP and MIP solvers were slower. Figure \ref{fig:time} shows the median running time with respect to graph size for all three solvers \cite{Yoghourdjian2015high}.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figs/time.pdf}
+\end{center}
+\caption{Median solve time for power-graphs. Filled marks mean that the solver found an optimal result for all the instances of that size under five minutes. Hollow marks mean that the solvers could not find an optimal solution for all the instances of that specific size under five minutes. The size of the marks reflect on the number of instances solved \cite{Yoghourdjian2015high}.}
+\label{fig:time}
+\end{figure}
+
+\section{Heuristic for Larger Networks}
+In order to handle larger graphs we developed a meta-heuristic approach based on Large Neighborhood Search (LNS). LNS is widely used to solve various transportation and scheduling problems \cite{LNS}. The LNS approach explores the large set of possible neighborhoods around the current solution and moves to a more desired one within the set. The search can be done using any method; we chose to use the same constrained optimization technique also used in the optimal layout algorithm, since it would make it easier to move to the neighborhood that is better in terms of the objective function and while respecting the constraints at all times \cite{Yoghourdjian2015high}.
+
+We decided to use the MIP model and took advantage of the warm-start support that Cplex provides. Where it was the slowest for the optimal layout problem, it proved to be the fastest with the LNS approach.
+
+The algorithm receives an initial layout achieved using a heuristic-constraint-based force-directed approach, named Force-Directed Grid-Snap (FDGS). We used the
+“grid-snap” technique described by Kieffer et al. \cite{kieffer2013incremental} in cola.js
+\cite{webcola}, which is a browser-based constraint-layout library. 
+
+Based on this initial layout, we generate two sets of constraints and add them to the model mentioned in section \ref{themodel}. The first set of constraints locks the horizontal and vertical ordering of nodes with respect to all other nodes that belong to the same level of grouping. The second set of constraints makes sure that nodes can only move closer to adjacent nodes, based on the Manhattan distance between them. 
+
+We iteratively relax the ordering constraints for a subset of nodes based on a selection and run the solver on this relaxation. New ordering constraints are derived from the solution layout and added to the model for the next iteration. Constraints for the Manhattan distance are updated and tightened as needed. A warmstart is used between each iteration to assist the solver and speed up the computation.
+
+Figure \ref{fig:time} shows the significant improvements in terms of solving time achieved using the LNS approach. Figure \ref{fig:ratio} in Appendix \ref{app:ratio} shows that the  quality of the LNS layout is twice as close to the optimal as the layout obtained using the Force-Directed Grid-Snap (FDGS) approach.
+
+\section{Conclusion}
+
+The rest of this research will be divided into three stages. As the next step we will do a literature review of research done into identifying quality metrics and features used in automatic and human-generated network layouts. We will then design and develop an algorithm that incorporates these features and produces high-quality human-like network diagrams. Then, we will evaluate our layouts quantitatively by measuring the presence of layout features and comparing these measurements to the presence of features in existing layouts; for both automatic and manual approaches. As a final step, we will evaluate our layouts qualitatively by doing a user evaluation that will ask participants to do some tasks and choose between preferred layouts. The research plan is discussed in detail in Section \ref{plan} of Chapter \ref{proposal}
+
+\appendix % all \chapter{..} commands after this will generate appendices
+\chapter{CP Model} \label{app:CP}
+
+\begin{lstlisting}
+include "globals.mzn";
+
+    int: nv;	// number of vertices
+    set of int: vertices = 1..nv;
+    constraint assert(nv >= 2, "need at least two vertice");
+    array[vertices] of 0..maxwidth : swd;	 // specified width & height
+    array[vertices] of 0..maxheight : sht;
+    array[vertices] of var 1..maxwidth: wd;	// calculated width & height
+    array[vertices] of var 1..maxheight: ht;
+    constraint (forall (u in vertices where swd[u] != 0)(wd[u] = swd[u]));
+    constraint (forall (u in vertices where sht[u] != 0)(ht[u] = sht[u]));
+    // desired (Manhattan) distance and weight between each pair of vertices
+    array[vertices,vertices] of 0..(maxwidth+maxheight): dd;
+    array[vertices,vertices] of int: ddw;
+    constraint
+    assert(forall(u,v in vertices where u!=v)(dd[u,v] >= 0), "dd should be >=0");
+    constraint
+    assert(forall(u,v in vertices where u!=v)(ddw[u,v] >= 0), "ddw should be >=0");
+    // containment matrix for each pair of vertices
+    array[vertices,vertices] of bool : containment;
+    // non-overlap matrix for each pair of vertices : 0 if they should overlap and 1 if they should not
+    array[vertices,vertices] of bool : noverlap;
+    int: maxwidth;  // maximum starting width, height of grid
+    int: maxheight;
+    var int : maxX;
+    var int : maxY;
+    constraint 0 <= maxX /\ maxX <= maxwidth;
+    constraint 0 <= maxY /\ maxY <= maxheight;
+    // core decision variables
+    // vertex position
+    array[vertices] of var 0..maxwidth: xs;
+    array[vertices] of var 0..maxwidth: xf;
+    array[vertices] of var 0..maxheight: ys;
+    array[vertices] of var 0..maxheight: yf;
+    constraint forall(u in vertices)(xf[u] = xs[u]+wd[u]);
+    constraint forall(u in vertices)(yf[u] = ys[u]+ht[u]);
+    // symmetry constraint
+    int : smallu = min([u | u in vertices where exists(v in vertices)(noverlap[u,v])]);
+    int : smallv = min([v | v in vertices where exists(u in vertices)(noverlap[u,v])]);
+    constraint xs[smallu] <= xs[smallv] /\ ys[smallu] <= ys[smallv];
+    // some vertices should not overlap
+    constraint
+    forall(u,v in vertices where u < v /\ noverlap[u,v])(nonOverlap(u,v));
+    predicate nonOverlap(vertices: u, vertices:v) =
+    ((xf[u] <= xs[v]) \/ (xf[v] <= xs[u]) \/ (yf[u] <= ys[v]) \/ (yf[v] <= ys[u]));
+    // all vertices contained in their parent container
+    constraint
+    forall(u in vertices where exists(v in vertices)(containment[u,v])) (
+    xs[u] = min([xs[v]|v in vertices where containment[u,v]]) /\
+    xf[u] = max([xf[v]|v in vertices where containment[u,v]]) /\
+    ys[u] = min([ys[v]|v in vertices where containment[u,v]]) /\
+    yf[u] = max([yf[v]|v in vertices where containment[u,v]]));
+    // all vertices are in the drawing area
+    constraint
+    forall(v in vertices)(
+    0 <= xs[v] /\ xf[v] <= maxX);
+    constraint
+    forall(v in vertices)(
+    0 <= ys[v] /\ yf[v] <= maxY);
+    // distance between vertices
+    array[vertices,vertices] of var 0..maxwidth: xAbsDist;
+    array[vertices,vertices] of var 0..maxheight: yAbsDist;
+    constraint
+    forall(u,v in vertices where u < v) (
+    xabsdist[u,v]=max([0,xs[v]-xf[u]+1,xs[u]-xf[v]+1]) /\
+    yAbsDist[u,v]= max([0,ys[v]-yf[u]+1,ys[u]-yf[v]+1]));
+    // Manhattan stress
+    array[vertices,vertices] of var 0..(2*(maxwidth+maxheight)): absdist;
+    constraint
+    forall(u,v in vertices where u < v) (
+    absdist[u,v]=abs(xAbsDist[u,v]+yAbsDist[u,v]-dd[u,v]));
+    var int stress=sum(u,v in vertices)((ddw[u,v])*(absdist[u,v]));
+    var int size=sum(u in vertices)(wd[u]+ht[u]);
+    var int m=(4*stress)+(1*size)+(2*maxX)+(2*maxY);
+    solve
+    minimize m;
+\end{lstlisting}
+
+\chapter{Quality Ratio} \label{app:ratio}
+\begin{figure}[hb]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figs/heuristic-ratio.pdf}
+\end{center}
+\caption{Average quality of the layouts obtained using the large neighborhood search (LNS) heuristic and the optimal layout (green). Average quality of the initial layout obtained using the force-directed grid-snap (FDGS) compared to the optimal layout (blue) \cite{Yoghourdjian2015high}.}
+\label{fig:ratio}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Back matter 
+%%
+
+%\backmatter						% start the thesis back matter
+%\begin{thesisauthorvita}
+%\begin{spacing}{1}
+%Publications arising from this thesis include:
+%\begin{description}
+%\item[Author, A.\ and Bloggs, J.\ (2002),]
+%A really catchy title. In \emph{The 31st International Conference
+%on Non-specific Computing.} Capital City, Country.
+%\item[Bloggs, J.\ and Author , A. (2002),]
+%A very much longer and significantly less catchy title. in \emph {Workshop on
+%A Research Area}. Springfield, USA.
+%\end{description}
+%\end{spacing}
+%\end{thesisauthorvita}
+
+%\bibliographystyle{dcu} % A good style to use with the Harvard package
+\bibliographystyle{abbrv}
+\bibliography{examplebib}
+
+%\chapter{Last Thing} % Appendices after the \backmatter command do not
+						% get a letter
+%This sort of appendix has no letter. 
+
+
+\end{document}
+
+

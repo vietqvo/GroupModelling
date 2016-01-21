@@ -1,0 +1,315 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% A sample thesis using the cssethesis class
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Preamble
+%%
+
+\documentclass[a4paper,11pt,phdthesis,singlespace,twoside]{cssethesis}
+
+% * Include the option "pdflatex" above if you want to use pdflatex rather than
+% standard latex to compile your document
+% * Include the option "litreview" above if this is a literature review.
+% * Include the option "nocoursecode" so that the numerical course code is
+% suppressed after the course name.
+% * Include the option "oneside" if you don't want formatting for two-sided
+%   printing.
+% * Include option "thesisdraft" to get a timestamp and "Draft" message in
+%   the footer
+% * Include option "thesispsdraft" to get a timestamp and "Draft" message in
+%   the footer, along with a grey "DRAFT" in the margin. Note: this only
+%   works with latex, not pdflatex
+
+\usepackage{harvard} % Use the Harvard bibliography and citation package
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{mathptmx}
+\usepackage{times}
+
+\usepackage{algorithm}
+\usepackage{enumitem}
+
+\usepackage{listings}
+\usepackage{color}
+
+% Definitions needed by the cssethesis class. See the documentation for
+% others
+\thesisauthor{Viet Vo}
+% \thesisauthorlastname{Vo}
+\thesisauthorpreviousdegrees{BCompSc, MSc} % Optional
+\thesisdepartment{Caulfield School of Information Technology} % Optional.
+%                  Clayton School of Information Technology is the default
+\thesisauthorstudentid{26356988} % Needed for litreview
+\thesisauthoremail{viet.vo\@@monash.edu} % Optional. Note that the @ is
+											 % given as \@@. This is not
+											 % necessary in normal LaTeX,
+											 % but it is if you use the
+											 % amsmath package - so why not
+											 % get into the habit?
+%\begin{center}
+%\titlegraphic{MonashCrest.pdf}
+%\includegraphics[width = 40mm]{MonashCrest}
+%\end{center}
+
+\thesismonth{October} % Optional. Current month is used if this is not set
+\thesisyear{2015} % Optional. Current year is used if this is not set
+\thesistitle{The Effects of Group Member's Parameters on Human Crowd Modelling}
+\thesissupervisor{Prof. Bernd Meyer}
+\thesissupervisoremail{bernd.meyer\@@monash.edu} % Optional
+\thesisassocsupervisor{Dr. Aldeida Aleti} % Optional
+\thesisassocsupervisoremail{aldeida.aleti\@@monash.edu} % Optional
+%\thesisdedication{I luv youse all} % Optional
+
+% Set some preferences for the Harvard bibliography stuff 
+% (See the documentation in harvard.ps)
+\citationstyle{dcu}
+\harvardparenthesis{round} % this can be round, square, curly, etc.
+\harvardyearparenthesis{round}
+
+% start the document
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Front matter 
+%%
+\frontmatter					% start the thesis front matter.
+
+\thesistitlepage				% Generate the title page.
+%\thesiscopyrightpage			% Generate the copyright page.
+% \thesisdedicationpage			% Generate a dedication page (optional)
+\tableofcontents				% Generate a table of contents.
+\listoftables					% Generate a list of tables (optional).
+\listoffigures					% Generate a list of figures (optional).
+
+\begin{thesisabstract}			% generate the abstract page.
+This thesis introduces \ldots
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+magna aliquam erat volutpat.
+\end{thesisabstract}                 
+
+%\thesisdeclarationpage			% generate the declaration page (optional).
+
+%\begin{thesisacknowledgments}	% generate the acknowledgements page (optional).
+%I would like to thank everyone who helped to make this possible. It has
+%been an incredible journey of self-discovery, and I love every last one of
+%you\ldots
+%\end{thesisacknowledgments}   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Main matter 
+%%
+\mainmatter						% start the thesis body.
+
+\chapter{Introduction}
+Here I introduce the research area and my contributions to it.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+magna aliquam erat volutpat.
+
+
+%\chapter{Literature Review}
+% often it is handy to keep the text of separate chapters in separate
+% files, and then to read them into the master document, as here
+\include{litrevharvard} % this causes a page-break, so put the \chapter
+						% command in the file to be included - I don't know
+						% why this happens :(
+
+\chapter{Figures and Tables}
+Here we will test that references to figures and tables work correctly.
+
+\section{Figures}
+\begin{figure}[ht]
+\begin{center}
+\resizebox{100mm}{!}{\includegraphics{dilbert_complexpictures}}
+\end{center}
+\caption{An example of a figure.}
+\label{fig:example}
+\end{figure}
+See Figure~\ref{fig:example}.
+
+\section{Tables}
+\begin{table}
+\begin{center}
+\begin{tabular}{lcr}
+23121 & 1212 & 232 \\ \hline  
+cat & frog & dog
+\end{tabular}
+\end{center}
+\caption{An example of a table}
+\label{tab:example}
+\end{table}
+See Table~\ref{tab:example}.
+
+\subsection{Referencing test}
+See Table~\ref{tab:example} and Figure~\ref{fig:example}.
+
+% another chapter
+\chapter{Method AAAA}
+
+
+%\begin{figure}[ht]
+%\begin{center}
+%\resizebox{100mm}{!}\includegraphics[width=0.4\columnwidth]{fig/blockage_frequency.pdf}
+%\end{center}
+%\caption{An example of a figure.}
+%\label{fig:example}
+%\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.2\columnwidth]{figs/blockage_frequency.pdf}
+\end{center}
+\caption{An example of a layered layout of a biological pathway with flow. The flow direction is left to right and this diagram has six vertical layers. Taken from http://www.pathwaycommons.org}
+\label{fig:layeredflow}
+\end{figure}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+\begin{figure}[ht]
+\begin{center}
+\resizebox{100mm}{!}{\includegraphics[width=0.05\columnwidth]{figs/blockage_frequency.pdf}}
+\end{center}
+\caption{An example of a figure.}
+\label{fig:example}
+\end{figure}
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+facilisi.
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+commodo consequat.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+consequat, vel illum dolore eu feugiat nulla facilisis.
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr,  At accusam aliquyam diam diam dolore
+dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore
+Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut
+vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+dolor sit amet.
+ 
+\appendix % all \chapter{..} commands after this will generate appendices
+
+\chapter{This appendix should get a letter}
+\label{app:example}
+An appendix before the backmatter gets an automatically generated letter by
+which it can be referred to. This is Appendix~\ref{app:example}.
+
+\chapter{Simulation Source Code}
+You may want to investigate the \texttt{lgrind} program and package if you
+wish to include source code in your thesis
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Back matter 
+%%
+
+\backmatter						% start the thesis back matter
+\begin{thesisauthorvita}
+\begin{spacing}{1}
+Publications arising from this thesis include:
+\begin{description}
+\item[Author, A.\ and Bloggs, J.\ (2002),]
+A really catchy title. In \emph{The 31st International Conference
+on Non-specific Computing.} Capital City, Country.
+\item[Bloggs, J.\ and Author , A. (2002),]
+A very much longer and significantly less catchy title. in \emph {Workshop on
+A Research Area}. Springfield, USA.
+\end{description}
+\end{spacing}
+\end{thesisauthorvita}
+
+\bibliographystyle{dcu} % A good style to use with the Harvard package
+\bibliography{examplebib}
+
+\chapter{Last Thing} % Appendices after the \backmatter command do not
+						% get a letter
+This sort of appendix has no letter. 
+
+
+\end{document}
