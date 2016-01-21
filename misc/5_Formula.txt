@@ -1,0 +1,38 @@
+pixel \ position \ x=(x,y)\\
+velocities \ (u,v) \ at \ each \ position\\ 
+objects \ velocity \ relation:\\
+\frac{dx}{dt}= u(x,y,t) \ , \ \frac{dy}{dt}=v(x,y,t)\\
+x(t+1)=x(t) +u(x(t),y(t),t)\\
+y(t+1)=y(t) +v(x(t),y(t),t)
+
+objects \ velocity \ relation:\ 
+\frac{dx}{dt}= u(x,y,t) \ , \ \frac{dy}{dt}=v(x,y,t)\\
+x(t+1)=x(t) +u(x(t),y(t),t)\\
+y(t+1)=y(t) +v(x(t),y(t),t)\\
+\phi_{t_0}^t(\b{x_0})=\b{x}(t;t_0;\b{x}_0)
+
+
+Crowd \ turbulence \ p_i \ and \ p_j\\
+\vec{f_{ij}}
+
+
+Contact \ force\ \vec{f_{ij}} = kg(r_i + r_j - d_{ij})\vec{n_{ij}} \\
+With \ wall \ \vec{f_{iW}}=kg(r_i-d_{iW})\vec{n_{iW}}\\
+Acceleration \ \frac{d\vec{v_i}}{dt}
+
+Contact \ force\ \vec{f_{ij}} = kg(r_i + r_j - d_{ij})\vec{n_{ij}} \\
+With \ wall \ \vec{f_{iW}}=kg(r_i-d_{iW})\vec{n_{iW}}\\
+Acceleration \ \frac{d\vec{v_i}}{dt}=\vec{f_i^0}+ \frac{\vec{f_{ij}}}{m} + \frac{\vec{f_{iW}}}{m} 
+
+d(\mathbf{a}) = d^{2}_{max} + f(a)^2 -2d_{max}f(a)cos(a_0-a)\\
+v_{des}(t)=min(v_i^0,d_h/t)\\
+\frac{d\vec{v_i}}{dt}=(\vec{v}_{des}-\vec{v}_i)/
+
+
+\vec{v_{t}} = \vec{v_{0}} + \frac{\vec{f}}{m}\Delta{t}
+
+\vec{D} = \vec{v_{0}} \Delta{t} + \frac{1}{2}\frac{\vec{f}}{m}\Delta{t^{2}}
+
+\vec{D} = \frac{1}{2} (\vec{v_{0}} + \vec{v_{t}}) \Delta{t}
+
+behavior \ effect = Rotation(Normalise(P_{t}-P{a}),a)E_{s}F_{a}F_{t}F_{d}
