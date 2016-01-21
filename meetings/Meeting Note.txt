@@ -1,0 +1,162 @@
+Mesh Network through Android Wifi without Internet
+
+============ Meeting 22_09 with Bernd
+	1. read this paper:  2011_Visual Crowd Surveillance through a Hydrodynamics Lens
+	2. re-write information in Helbing papers and Troser & 
+		( power law distribution , stampede in heading direction, turning conner ) papers about crowd turbulence 
+		Newton mechanics
+			fluid dynamic - the statistics of crowd fluids
+			social force models - Experimental study of the behavioural mechanism underlying self-organization in human crowds
+		
+	3. myriad ii model and relevant publication
+		+ Crowd management and urban design: New scientific Approach 	http://www.palgrave-journals.com/udi/journal/v18/n4/abs/udi20137a.html
+		+ Multi-resolution simulation of taxi services on airport terminal's curbside http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6728580&tag=1
+		+ Myriad: an Open-ended Design Project http://www.diva-portal.org/smash/record.jsf?pid=diva2:742905
+	4. Iain Couzin Publication: http://icouzin.princeton.edu/lab-publications/ 
+		- Directional collective cell migration emerges as a property of cell interactions 
+		- An evolutionary framework for studying mechanisms of social behaviour
+		+ Collective learning and optimal consensus in animal groups
+		+ How the spatial positions of individuals affects their influence on swarms: a numerical comparison of two popular swarm dynamics models
+		+ Both information and social cohesion determine collective decisions in animal groups
+		+ Leadership and the role of spatial interactions in social dynamics
+		+ Collective states, multi stability and transitional behaviour in schooling fish
+		+ Emergent sensing of complex environments by mobile animal groups
+		+ Visual attention and the acquisition of information in human crowds
+		+ The directional flow of visual information transfer between pedestrians
+		+ Inferring the structure and dynamics of interactions in schooling fish
+		+ Leadership, consensus decision making and collective behaviour in human crowds
+	5. - write literature review information we had in summary 
+		
+		+ important of crowd modelling by mobile & camera approaches [understand evacuation dynamics[read papers about evacuation dynamics], 
+		  behaviour, design architecture especially in right corner through publications –sarvi, in helbing 2014 saving, simulation]
+		+ Overall through survey papers on high-density crowd & biology inference
+		+ Analysis and studies in micro
+		+ Analysis and studies in meso
+		+ Analysis and studies in macro
+		+ Efforts in crowd disaster data generally
+			+Approach by biology swarm
+			+Approach by panic detection
+			+Approach by smart phone & context-aware framework
+			+Approach by survey & calibrate + validation simulation
+		
+============ Meeting Oct 2nd with Alda 
+	1. Classification in approaches. Must be more detailed. Critical they done something, done something wrong, find problem, write critisize
+	2. By your own words.
+	3. swarm optimisation understanding
+	4. Literature, coherent
+	5. Student in Fitness Landscape
+	
+============ Meeting Oct 6th with Bernd
+	1. Answer his questions to direct research
+	
+============ Meeting Oct 7th with Alda
+	1. Find out crowd parameters
+	
+============ Meeting Oct 13rd with Bernd, Alda
+	1. Data could be collected from real-time observation in high density, not only from parameters contributing running models
+	2. Data could be collected from adjusting models, validate and adapting models, calibration techniques
+	3. Information to detect flow from mobile, approximately?
+	
+============ Meeting Oct 20nd with Bernd
+	Just similar data, or simpler data, more available from infrastructure
+	More flexible, how these data (other resources) can interact with current models (in micro models, or in meso -aggregation models) 
+	(GPS, Proximity, occlusion, tracking whole trajectory of pedestrian's commute)
+	
+	1- new factors that camera cannot extract
+		+ Read papers about validation, calibration, mobile folders. calibrate & adjust this in continuum & network models in real time. IN WHICH, WHERE, WHEN SCENARIOS CAMERA SURVEILLANCE CAN'T WORK 
+		+ Read one paper about continuum & network models to add our information
+		+ Read papers about leadership, proximity how group together, breakout, smoothly, roughly, fine-grain, trajectory escaping - realistic can not get from camera.
+		+ Read papers of Cebrian, other collected papers
+		
+		+ Camera position + gps proximity measures:
+			where when, time possible position could lead to high crowd pressure, density, turbulence- Time-location table of pedestrian, could be add on the model on that camera
+			crowd pressure + turbulence transition at location, time
+			where and when the lane could be formatted, expected density, lane average velocity when we know the camera position, when the user will increase speed	
+			where when leadership can be created and break-out, smoothly or roughly ?
+			what kind of global path pedestrian is in
+		
+		In panic:
+			+ GPS + proximity + graph clustering -> habit path movement (time table + position probabilities /pedestrian), who you will follow (relationship-proximity + same GPS), herding [CURRENT MODEL DOESN'T DO KNOW, THERE ARE ONLY ON FISH STUDY]	
+			+ Heat map of crowd pressure, local body compression (when crowd high density, acceleration increase energy high but position doesn't change) -> stampede, turbulence
+			+ Acceleration similar in consecutive segments, position dones'nt change much, or change with the low SD -> stop-go waves. Which segment causes stop-go waves
+		In evacuation:
+			+PSO on GPS proximity, to find global optimal place, current position what is next
+			
+	2- calibrate, adjust models in both micro, meso, macro levels
+	3- adjust model, thinks about real time emergency evacuation factor combinations
+	4- compliment, interface, interact them when camera hasn't setup yet
+	
+	Experiment milestones: White night, Boxing day, New Year Eve
+ 
+============ Meeting Oct 29th with Alda
+	1- Edited several paragraphs in document file and making clearer
+	2- Should making experiment as soon as possible
+	
+============ Meeting Nov 3rd with Alda
+	1- present on sharing document
+	2- crowd pressure transition and when lane formation occur
+	3- arrange meeting with Reza on Nov 7
+	
+============ Meeting Nov 5rd with Alda
+	(who is familiar with that infrastructure layout, we know where they will turn right or left, and when he moves faster) 
+	1. update sharing file with (velocity entropy in cell size, definition of Crowd Pressure, Turbulence , make clear three approaches by figures)
+	2. notify Bernd
+	3. read about HMM and graph model to discuss with Reza
+
+	( mobile sensing information-gps, proximity, acceleration when performing emergency situation on animal)
+	emergency in fire, bottleneck
+ 
+============ Meeting Nov 10th with Alda
+	1. should email clealy gap, approach to Bernd
+	2. read papers about crowd pressure + GPS
+	3. keep writing, refactor and should be ready for implementation
+	4. consider other approaches and how to get dataset
+
+============ Meeting Nov 11th with Alda
+	1. perform surveys more on this temporal information
+	2. mathematical crowd pressure change at each cell and your other approaches (hmm for all states - not calculate by individual, other model, graph model) 
+	3. mathematical lane formation time
+
+============ Meeting Nov 11th with Bernd and Alda	
+	1. Re-write 500 words about proposed method and how to enhance current crowd simulation models
+	
+============ Meeting Nov 24th with Bernd and Alda
+	1- Bernd suggest new idea bout cut-off distance instead of flock and boundary in term of computational burden reduction
+	2- Local route choice ? Temporal information
+	
+============ Meeting Nov 28 with Bernd and Alda
+	1- Read papers about agent-based models
+	2- Read about cognitive levels and implement in Decision Making
+
+============ Meeting Dec 8 with Bernd and Alda
+	1 -Present about Agent-Cognitive based Model
+	2- Importance why do we need, where do you go with that, practically
+	   Why can I sudden do it
+	   Why am I person, key to do it
+	   What we key door idea to help solve that, why does it resolvable.
+
+============ Meeting Dec 15 with Bernd
+	1- Adaptive Route Choice Modelling with Cognitive Agent-based model
+	2- How optimisation techniques can help to resolve 'human-like' behaviour and evacuation plan
+	3- How to deploy technically and socially towards data acquisition
+	4- Project Time line
+
+============ Meeting Jan 30 with Bernd, Alda
+	1- Consider the effect of agent's parameter in force model in simulating crowd phenomena
+	2- Construct simulation tool
+	
+============ Meeting Feb 9 with Bernd, Alda	
+	1-Simulate different pedestrian types with their corresponding physical attributes distribution
+	2-This is useful for knowing pedestrian's behaviour at specific scenario at specific place (context aware)
+	
+============ Meeting Feb 13 with Bernd, Alda
+	1-Need to summarize experimental design and send to Bernd, Alda
+	2-Discuss about possible conditions making crowd change its behaviour
+
+============ Meeting Feb 20 with Bernd, Alda
+	1-Need to consider about what happen in first duration period, flow rate, escape time, bottleneck shape, reproducible.
+	2-Consider on fixed model Nomad model and using the same parameters
+
+============ Meeting Mar 5 with Bernd, Alda
+	1-Develop one prototype including 3 pedestrian types, another one is average however the same distribution. Do it for Nomad and Social Force model
+	2-Develop observation (flowrate, escapte by time)
