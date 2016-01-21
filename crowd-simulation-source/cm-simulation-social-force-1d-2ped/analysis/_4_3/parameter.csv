@@ -1,0 +1,51 @@
+SimulationId,Naverage,Taverage,Bottleneck
+167915_1,2,4,[]
+167915_2,2,6,[]
+167915_3,2,4,[]
+167915_4,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -27.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 6.0, ""force_unit"": 2.0}]"
+167915_5,2,6,[]
+167915_6,2,6,[]
+167915_7,2,5,[]
+167915_8,2,4,[]
+167915_9,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -13.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 5.0, ""force_unit"": 2.0}]"
+167915_10,2,4,[]
+167915_11,2,5,[]
+167915_12,2,5,[]
+167915_13,2,5,[]
+167915_14,2,6,[]
+167915_15,2,4,[]
+167915_16,2,5,[]
+167915_17,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -29.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 6.0, ""force_unit"": 2.0}]"
+167915_18,2,6,[]
+167915_19,2,4,[]
+167915_20,2,4,[]
+167915_21,2,5,[]
+167915_22,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -10.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 5.0, ""force_unit"": 2.0}]"
+167915_23,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -20.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 3.0, ""force_unit"": 2.0}]"
+167915_24,2,4,[]
+167915_25,2,6,[]
+167915_26,2,4,[]
+167915_27,2,6,[]
+167915_28,2,4,[]
+167915_29,2,4,[]
+167915_30,2,5,[]
+167915_31,2,6,[]
+167915_32,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -21.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 6.0, ""force_unit"": 2.0}]"
+167915_33,2,4,[]
+167915_34,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -23.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 7.0, ""force_unit"": 2.0}]"
+167915_35,2,5,[]
+167915_36,2,4,[]
+167915_37,2,6,[]
+167915_38,2,5,[]
+167915_39,2,6,[]
+167915_40,2,5,[]
+167915_41,2,5,[]
+167915_42,2,5,[]
+167915_43,2,5,[]
+167915_44,2,5,[]
+167915_45,0,0,"[{""velocity"": -5.329070518200751e-15, ""position"": -0.5363723148248618, ""time_travelled"": 50.00999999999862, ""id"": 1.0, ""distance_travelled"": 3.736372314824862, ""interaction_force_tracking"": -1.7163914074395632, ""desired_force_tracking"": 1.7163914074395579, ""initial_position"": -14.0, ""force_unit"": 6.0}, {""velocity"": -5.329070518200751e-15, ""position"": 0.7151630864331581, ""time_travelled"": 50.00999999999862, ""id"": 2.0, ""distance_travelled"": 0.08483691356684198, ""interaction_force_tracking"": 0.5721304691465211, ""desired_force_tracking"": -0.5721304691465264, ""initial_position"": 3.0, ""force_unit"": 2.0}]"
+167915_46,2,5,[]
+167915_47,2,5,[]
+167915_48,2,6,[]
+167915_49,2,5,[]
+167915_50,2,4,[]

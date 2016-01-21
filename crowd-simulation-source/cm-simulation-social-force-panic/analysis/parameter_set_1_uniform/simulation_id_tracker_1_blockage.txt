@@ -1,0 +1,54 @@
+
+	"average_p_4": "150257_3,150257_7,150257_10,",
+    "average_p_5": "574340_14,527190_15,527190_20,195247_7,195247_12,",
+	"average_p_6": "574340_8,814846_3,814846_4,814846_7,814846_13,835902_2,835902_20,",
+    "average_p_7": "125921_4,125921_19,1482_8,195247_13,",
+	"average_p_8": "125921_11,835902_19,135919_13,",
+	"average_p_9": "527190_6,527190_9,125921_9,195247_14,195247_16,195247_6",
+	"average_p_10": "150257_4,",
+	"average_p_11": "",
+	"average_p_12": "814846_6,",
+	"average_p_13": "",
+	"average_p_14": "135919_8,",
+	"average_p_15": "135919_14,",
+	"average_p_16": "195247_9,",
+	"average_p_17": "814846_16,",
+	"average_p_18": "150257_13,944359_2,835902_15,",
+	"average_p_19": "135919_10,",
+	"average_p_20": "",
+	
+	
+	"different_p_4": "150257_17,",
+	"different_p_5": "135919_13,",
+	"different_p_6": "",
+	"different_p_7": "944359_14,1482_5,195247_6,",
+	"different_p_8": "527190_19,",
+	"different_p_9": "574340_17,",
+	"different_p_10": "527190_12,",
+	"different_p_11": "",
+	"different_p_12": "",
+    "different_p_13": "",
+	"different_p_14": "",
+	"different_p_15": "",
+    "different_p_16": "",
+	"different_p_17": "",
+    "different_p_18": "",
+	"different_p_19": "",   
+    "different_p_20": "",
+	
+	
+remove slow-parameter pedestrians and stuck by simulation time, and caused by pygame drawing.
+blockage means whole pedestrians in crowd become non-moving pedestrians at the end of simulation time
+
+
+
+
+	
+	  
+    
+	 
+	   
+   
+	  
+	      
+		   

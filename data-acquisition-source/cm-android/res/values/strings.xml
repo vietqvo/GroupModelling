@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrowdModelling</string>
+    <string name="logodiscription">Hazard Store powered by Monash</string>
+    <string name="hello_world">Hello world! Hello Monash</string>
+    <string name="splashhint_username">Your auth name is </string>
+    <string name="splashhint_age">Your age is </string>
+    <string name="splashhint_group_id">Your groupID is </string>
+    <string name="splashenter">Position tracking</string> 
+    <string name="splashexit">Exit</string>
+    <string name="splash_term_condition">About application</string>
+    <string name="splash_username_error"> Please input your auth name</string>
+    <string name="network_bluetooth_warn">Please try again when Bluetooth and Wifi are turned on.</string>
+    <string name="cancel_confirmation"> Do you allow the application continue to run in background?</string>
+    <string name="connection_error_message">Wi-Fi on this device is off. Would you like to turn it on?</string>
+    <string name="splash_data_collection_confirmation">Data collection in background</string>
+    <string name="splash_warning_monitoring_zone">You are out of monitoring zone</string>
+    <string name="splash_warning_server_down">Our server is turned off. Please contact us for more information.</string>
+    <string name="borderdiscription">CustomToastBorder</string>
+
+</resources>
