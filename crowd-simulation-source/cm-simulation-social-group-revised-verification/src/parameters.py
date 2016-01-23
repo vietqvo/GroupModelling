@@ -8,7 +8,7 @@ from pygame_drawing.scenario import Scenario
 scenarios = {
         'corridorunidirec': Scenario({
             'name'                    : 'corridor-uni',      
-            'group_num'            : 10,                 
+            'group_num'            : 50,                 
             ################################## for young pedestrian ##############################################################    
             'interaction_force'       : [1.0, 1.0], #3.0
             'interaction_force_step'  :  0.2,
