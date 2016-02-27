@@ -61,24 +61,22 @@ static void pedestrian_from_pyobject(PyObject * o, Pedestrian * a)
     a->force_unit               = double_from_attribute(o, "force_unit");
     a->interaction_range		= double_from_attribute(o, "interaction_range");
 
-    a->att_unit					= double_from_attribute(o,"attraction_strength");
-    a->att_range				= double_from_attribute(o,"attraction_range");
+    a->att_unit					= double_from_attribute(o, "attraction_strength");
+    a->att_range				= double_from_attribute(o, "attraction_range");
 
     a->p_type					= double_from_attribute(o, "p_type");
-    a->pedestrian_id			= double_from_attribute(o,"pedestrian_id");
+    a->pedestrian_id			= double_from_attribute(o, "pedestrian_id");
 
     a->position         		= vector_from_attribute(o, "position");
     a->initial_position 		= vector_from_attribute(o, "initial_position");
     a->velocity         		= vector_from_attribute(o, "velocity");
     a->acceleration     		= vector_from_attribute(o, "acceleration");
 
-    a->velocity_temp			= vector_mul(a->velocity,0.0);
     a->position_temp			= vector_mul(a->position,0.0);
 
     //initial level of Runge Kutta method, 0 element is for initial
     for(i=0; i <5; i++){
     	a->acceleration_rk [i] = vector_mul(a->acceleration,0.0);
-    	a->velocity_rk[i] = vector_mul(a->velocity,0.0);
     	a->position_rk[i] = vector_mul(a->position,0.0);
     }
 }
@@ -121,15 +119,12 @@ static void rk_appropximate_level(int level_k){
 		}
 
 		for(i = 0; i < group_population_count; i++) {
-			// compute interaction force for pedestrian i at level 1
-			calculate_pedestrian_repulsion(&group_pedestrians[i],i,0);
-			// compute attraction force for pedestrian i at level 1
-			calculate_group_force(&group_pedestrians[i],i,0);
+			// compute interaction attraction force for pedestrian i at level 1
+			calculate_pedestrian_repulsion_attraction(&group_pedestrians[i],i,0);
 		}
 
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[0] = vector_mul(group_pedestrians[i].acceleration_rk[0],timestep);
-			group_pedestrians[i].position_rk[0] = vector_mul(group_pedestrians[i].velocity,timestep);
+			group_pedestrians[i].position_rk[0] = vector_mul(group_pedestrians[i].acceleration_rk[0],timestep);
 		}
 	}
 	else if(level_k==1){ //compute at level 2
@@ -141,14 +136,11 @@ static void rk_appropximate_level(int level_k){
 
 		for(i = 0; i < group_population_count; i++) {
 			// compute interaction force for pedestrian i at level 2
-			calculate_pedestrian_repulsion(&group_pedestrians[i],i,1);
-			// compute attraction force for pedestrian i at level 2
-			calculate_group_force(&group_pedestrians[i],i,1);
+			calculate_pedestrian_repulsion_attraction(&group_pedestrians[i],i,1);
 		}
 
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[1] = vector_mul(group_pedestrians[i].acceleration_rk[1],timestep);
-			group_pedestrians[i].position_rk[1] = vector_mul(vector_add(group_pedestrians[i].velocity,vector_mul(group_pedestrians[i].velocity_rk[0],0.5)),timestep);
+			group_pedestrians[i].position_rk[1] = vector_mul(group_pedestrians[i].acceleration_rk[1],timestep);
 		}
 	}
 	else if(level_k==2){ //compute at level 3
@@ -160,13 +152,11 @@ static void rk_appropximate_level(int level_k){
 
 		for(i = 0; i < group_population_count; i++) {
 			// compute interaction force for pedestrian i at level 3
-			calculate_pedestrian_repulsion(&group_pedestrians[i],i,2);
-			// compute attraction force for pedestrian i at level 3
-			calculate_group_force(&group_pedestrians[i],i,2);
+			calculate_pedestrian_repulsion_attraction(&group_pedestrians[i],i,2);
 		}
+		
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[2] = vector_mul(group_pedestrians[i].acceleration_rk[2],timestep);
-			group_pedestrians[i].position_rk[2] = vector_mul(vector_add(group_pedestrians[i].velocity, vector_mul(group_pedestrians[i].velocity_rk[1], 0.5)),timestep);
+			group_pedestrians[i].position_rk[2] = vector_mul(group_pedestrians[i].acceleration_rk[2],timestep);
 		}
 	}
 	else if(level_k==3){ //compute at level 4
@@ -179,13 +169,11 @@ static void rk_appropximate_level(int level_k){
 
 		for(i = 0; i < group_population_count; i++) {
 			// compute interaction force for pedestrian i at level 4
-			calculate_pedestrian_repulsion(&group_pedestrians[i],i,3);
-			// compute attraction force for pedestrian i at level 4
-			calculate_group_force(&group_pedestrians[i],i,3);
+			calculate_pedestrian_repulsion_attraction(&group_pedestrians[i],i,3);
 		}
+
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[3] = vector_mul(group_pedestrians[i].acceleration_rk[3],timestep);
-			group_pedestrians[i].position_rk[3] = vector_mul(vector_add(group_pedestrians[i].velocity, group_pedestrians[i].velocity_rk[2]),timestep);
+			group_pedestrians[i].position_rk[3] = vector_mul(group_pedestrians[i].acceleration_rk[3],timestep);
 		}
 	}
 
@@ -221,7 +209,7 @@ static PyObject * update_pedestrians(PyObject * self, PyObject * args)
 static void update_position(Pedestrian * a)
 {
 
-	Vector delta_v, delta_v_temp, delta_p, delta_p_temp;
+	Vector delta_p, delta_p_temp;
 
 	//update position
 	delta_p = vector_add(a->position_rk[0],vector_mul(a->position_rk[1],2));
@@ -230,71 +218,58 @@ static void update_position(Pedestrian * a)
 	vector_imul(&delta_p,1/6.0);
 	a->position = vector_add(a->position,delta_p);
 
-
-	//update velocity
-	delta_v = vector_add(a->velocity_rk[0],vector_mul(a->velocity_rk[1],2));
-	delta_v_temp = vector_add(vector_mul(a->velocity_rk[2],2),a->velocity_rk[3]);
-	vector_iadd(&delta_v,&delta_v_temp);
-	vector_imul(&delta_v,1/6.0);
-	a->velocity = vector_add(a->velocity,delta_v);
-
 	a->time += timestep;
 
 }
 
-static void calculate_pedestrian_repulsion(Pedestrian * a,int index,int level_rk)
+static void calculate_pedestrian_repulsion_attraction(Pedestrian * a,int index,int level_rk)
 {
 	int j;
-	Vector repulsion;
-
+	double repulsion, attraction;
+	Vector interaction;
 	//compute repulsion force for group pedestrian
 	for(j = 0; j < group_population_count; j++) {
 	        if(index == j) continue;
 	        
-			//we compute the force between this two pedestrians
-	        repulsion = calculate_i_repulsion_vector(a,group_pedestrians[j],level_rk);
-	        vector_iadd(&a->acceleration_rk[level_rk], &repulsion);
+			//we compute the repulsion attraction force between this two pedestrians
+	        repulsion = calculate_repulsion_magnitude(a,group_pedestrians[j]);
+			
+			//we compute the attraction force between this two pedestrians
+			attraction = calculate_attraction_magnitude(a,group_pedestrians[j]);
+			
+			repulsion -=attraction;
+
+			interaction = vector_sub(a->position_temp, group_pedestrians[j].position_temp);
+			vector_unitise(&interaction);
+			
+			vector_imul(&interaction,repulsion);		
+	        vector_iadd(&a->acceleration_rk[level_rk], &interaction);		
 	}
 }
 
 //this method is to calculate the repulsion force created by Pedestrian b on Pedestrian * a
-static Vector calculate_i_repulsion_vector(Pedestrian *a, Pedestrian b,int level_rk)
+static double calculate_repulsion_magnitude(Pedestrian *a, Pedestrian b)
 {
 	double radius_sum = a->radius + b.radius;
 	Vector from_b     = vector_sub(a->position_temp, b.position_temp);
-	double distance   = vector_length(from_b);
+	double distance   = fabs(vector_length(from_b) - radius_sum);
+	
+	double force_strength =  a->force_unit * exp((-distance)/a->interaction_range);
+	
+	return force_strength;
 
-	vector_unitise(&from_b);
-	vector_imul(&from_b, a->force_unit * exp((radius_sum-distance)/a->interaction_range));
-
-	return from_b;
 }
 
-
-static void  calculate_group_force(Pedestrian *a,int index,int level_rk)
-{
-	Vector attraction;
-	int j;
-	//compute attraction force for group pedestrian
-	for(j = 0; j < group_population_count; j++) {
-		   if(index == j) continue;
-			//we compute the attraction force between this two pedestrians
-		   attraction = calculate_i_attraction_vector(a,group_pedestrians[j],level_rk);
-	       vector_iadd(&a->acceleration_rk[level_rk], &attraction);
-	}
-}
-
-//this method is to calculate the attraction force created by Pedestrian a on Pedestrian * a
-static Vector calculate_i_attraction_vector(Pedestrian *a, Pedestrian b,int level_rk)
+//this method is to calculate the attraction force created by Pedestrian b on Pedestrian * a
+static double calculate_attraction_magnitude(Pedestrian *a, Pedestrian b)
 {
 	double radius_sum = a->radius + b.radius;
-	Vector from_a     = vector_sub(b.position_temp, a->position_temp);
-	double distance   = vector_length(from_a);
+	Vector from_b     = vector_sub(a->position_temp, b.position_temp);
+	double distance   = fabs(vector_length(from_b) - radius_sum);
 
-	vector_unitise(&from_a);
-	vector_imul(&from_a, a->att_unit * exp((radius_sum-distance)/a->att_range));
+	double force_strength =  a->att_unit * exp((-distance)/a->att_range);
 
-	return from_a;
+	return force_strength;
 }
 
 //this method is to retrieve information of group member a

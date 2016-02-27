@@ -16,14 +16,14 @@ scenarios = {
                            
             'attraction_force'        : 1.0,#1.0,#1.0#0.5,
              
-            'attraction_range'        : 0.8,#0.8
+            'attraction_range'        : 0.46,#0.8
               
              
             ################################## for information of environment and shared parameters ##################################                
             'radius_mean'                         : 0.3,
         
             'start_areas'                         : [
-                                                     (-1.5,1.5)],
+                                                     (-1.0,1.0)],
             'drawing_width'                       : 1300,
             'drawing_height'                      : 850,
             'pixel_factor'                        : 22,

@@ -7,7 +7,6 @@ Created on 13 Feb 2015
 import sys
 import os, math, csv
 from src import constants
-#from src import socialforce as force_model  # @UnresolvedImport
 from src import socialforce2 as force_model  # @UnresolvedImport
 from src.pedestrian_types.population import PopulationGenerator
 from src.simulation_observations.observations import ObservationPlots as observer_plot
@@ -90,7 +89,7 @@ class Scenario:
             population_generator._generate_population(radii_generators[current_simulation_run],placement_generators[current_simulation_run])
             
             """ log dump"""    
-            population_generator._log_generation(os.path.join(constants.log_dir, simulation_id))
+            #population_generator._log_generation(os.path.join(constants.log_dir, simulation_id))
                     
             group_pedestrians = population_generator._get_generated_group_pedestrians_population()              
 

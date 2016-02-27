@@ -22,11 +22,9 @@ typedef struct {
     Vector velocity;
     Vector acceleration;
 
-	Vector acceleration_rk[5]; //rk for each order
-	Vector velocity_rk[5]; //rk for each order
-	Vector position_rk[5];//rk for each order
+	Vector acceleration_rk[4]; //rk for each order
+	Vector position_rk[4];//rk for each order
 
-	Vector velocity_temp; //this is temporary velocity used to calculate acceleration at each order
 	Vector position_temp; //this is temporary position used to calculate acceleration at each order
 
 } Pedestrian;
@@ -45,12 +43,11 @@ static Vector vector_from_pyobject(PyObject * o);
 
 /**** update model methods ****/
 static void rk_appropximate_level(int k);
-static void calculate_pedestrian_repulsion(Pedestrian * a,int index, int level_rk);
-static void calculate_group_force(Pedestrian *a,int index,int level_rk);
+static void calculate_pedestrian_repulsion_attraction(Pedestrian * a,int index, int level_rk);
 static void identify_group_centre_of_mass();
 
-static Vector calculate_i_repulsion_vector(Pedestrian *a, Pedestrian b,int level_rk);
-static Vector calculate_i_attraction_vector(Pedestrian *a, Pedestrian b,int level_rk);
+static double calculate_repulsion_magnitude(Pedestrian *a, Pedestrian b);
+static double calculate_attraction_magnitude(Pedestrian *a, Pedestrian b);
 
 static void update_position(Pedestrian * a);
 

@@ -6,7 +6,7 @@ Created on 16 Feb 2015
 import numpy as np
 import random
 
-timestep              = 0.005
+timestep              = 0.01#0.005
 total_monitoring_duration_uni_direction = 40 # total time for our simulation in unique directional flow
 cut_off_first_period = 0 #second, we cut off first monitoring period for the group cohesion emerge 
 

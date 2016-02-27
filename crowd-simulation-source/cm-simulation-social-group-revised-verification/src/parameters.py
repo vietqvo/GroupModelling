@@ -10,7 +10,7 @@ scenarios = {
             'name'                    : 'corridor-uni',      
             'group_num'            : 50,                 
             ################################## for young pedestrian ##############################################################    
-            'interaction_force'       : [1.0, 1.0], #3.0
+            'interaction_force'       : [2.5, 2.5], #3.0
             'interaction_force_step'  :  0.2,
              
             'interaction_range'       : [0.3,0.3], #2.0
@@ -19,7 +19,7 @@ scenarios = {
             'attraction_force'        : [1.0, 1.0], #3.0
             'attraction_force_step'   :  0.2,
              
-            'attraction_range'        : [0.2,0.2], #2.0
+            'attraction_range'        : [0.46,0.46], #2.0
             'attraction_range_step'   : 0.2,  
              
             ################################## for information of environment and shared parameters ##################################                

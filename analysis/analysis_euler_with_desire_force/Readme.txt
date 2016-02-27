@@ -1,1 +1,0 @@
-This folder is for data explaination, result representation analysis  

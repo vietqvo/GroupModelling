@@ -21,13 +21,9 @@ typedef struct {
     double acceleration;
 
 	double acceleration_rk[5]; //rk for each order
-	double velocity_rk[4]; //rk for each order
 	double position_rk[4];//rk for each order
 
-	double velocity_temp; 
 	double position_temp; 
-
-	double previous_velocity;
 	double previous_position;
 
 } Pedestrian;

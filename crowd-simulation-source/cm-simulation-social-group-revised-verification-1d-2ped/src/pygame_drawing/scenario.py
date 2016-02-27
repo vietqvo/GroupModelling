@@ -115,13 +115,13 @@ class Scenario:
                     v = force_model.group_pedestrian_a_property(i,"velocity")
                     d = force_model.group_pedestrian_a_property(i,"distance")
                     
-                    v0,v_rk1,v_rk2,v_rk3,v_rk4 = force_model.group_pedestrian_a_property(i,"velocity_rk")
-                    x0,x_rk1,x_rk2,x_rk3,x_rk4 = force_model.group_pedestrian_a_property(i,"position_rk")
+                    #v0,v_rk1,v_rk2,v_rk3,v_rk4 = force_model.group_pedestrian_a_property(i,"velocity_rk")
+                    #x0,x_rk1,x_rk2,x_rk3,x_rk4 = force_model.group_pedestrian_a_property(i,"position_rk")
                     
                     
-                    self.ped_track._add_sample(self.time, v, d,
-                                               v0,v_rk1,v_rk2,v_rk3,v_rk4,
-                                               x0,x_rk1,x_rk2,x_rk3,x_rk4 )
+                    #self.ped_track._add_sample(self.time, v, d,
+                    #                           v0,v_rk1,v_rk2,v_rk3,v_rk4,
+                    #                           x0,x_rk1,x_rk2,x_rk3,x_rk4 )
                     
                 self._canvas("draw_pedestrian", x,0,r,0)#pedestrian_type = 0
             else:
@@ -139,10 +139,10 @@ class Scenario:
        
         """ stop after 40 second period"""
         if self.time > self.simulation_duration:
-            self.plots._proceed_cut_off()
+            #self.plots._proceed_cut_off()
             
             """ plot save """
-            self.ped_track._save(self.observation_plot_prefix, "test")
+            #self.ped_track._save(self.observation_plot_prefix, "test")
             return True
 
         return False

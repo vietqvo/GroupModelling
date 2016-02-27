@@ -1,1 +1,0 @@
-average_velocity_mean= [1.6,0.8],average_force_unit =[2.0,8.0])

@@ -47,16 +47,13 @@ static void pedestrian_from_pyobject(PyObject * o, Pedestrian * a)
     a->velocity         		= double_from_attribute(o, "velocity");
     a->acceleration     		= double_from_attribute(o, "acceleration");
 
-    a->velocity_temp			= 0.0;
     a->position_temp			= 0.0;
 
-    a->previous_velocity 		= 0.0;
     a->previous_position		= 0.0;
 
     //initial level of Runge Kutta method, 0 element is for initial
     for(i=0; i <4; i++){
     	a->acceleration_rk[i] = 0.0;
-    	a->velocity_rk[i] = 0.0;
     	a->position_rk[i] = 0.0;
     }
 }
@@ -87,6 +84,7 @@ static void identify_group_centre_of_mass()
 
 }
 
+
 static void rk_appropximate_level(int level_k){
 
 	int i;
@@ -96,8 +94,7 @@ static void rk_appropximate_level(int level_k){
 			group_pedestrians[i].acceleration_rk[0] =  0.0;
 			group_pedestrians[i].position_temp = group_pedestrians[i].position;
 
-			//collect previous position and velocity
-			group_pedestrians[i].previous_velocity = group_pedestrians[i].velocity;
+			//collect previous position
 			group_pedestrians[i].previous_position = group_pedestrians[i].position;
 
 		}
@@ -110,8 +107,7 @@ static void rk_appropximate_level(int level_k){
 		}
 
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[0] = group_pedestrians[i].acceleration_rk[0] * timestep;
-			group_pedestrians[i].position_rk[0] = group_pedestrians[i].velocity * timestep;
+			group_pedestrians[i].position_rk[0] = group_pedestrians[i].acceleration_rk[0] * timestep;
 		}
 	}
 	else if(level_k==2){ //compute at level 2
@@ -129,8 +125,7 @@ static void rk_appropximate_level(int level_k){
 		}
 
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[1] = group_pedestrians[i].acceleration_rk[1] * timestep;
-			group_pedestrians[i].position_rk[1] = (group_pedestrians[i].velocity + (group_pedestrians[i].velocity_rk[0] * 0.5)) * timestep;
+			group_pedestrians[i].position_rk[1] = group_pedestrians[i].acceleration_rk[1] * timestep;
 		}
 	}
 	else if(level_k==3){
@@ -147,8 +142,7 @@ static void rk_appropximate_level(int level_k){
 			calculate_group_force(&group_pedestrians[i],i,2);
 		}
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[2] = group_pedestrians[i].acceleration_rk[2] * timestep;
-			group_pedestrians[i].position_rk[2] = (group_pedestrians[i].velocity + (group_pedestrians[i].velocity_rk[1] * 0.5)) * timestep;
+			group_pedestrians[i].position_rk[2] = group_pedestrians[i].acceleration_rk[2] * timestep;
 		}
 	}
 	else if(level_k==4){
@@ -166,8 +160,7 @@ static void rk_appropximate_level(int level_k){
 			calculate_group_force(&group_pedestrians[i],i,3);
 		}
 		for(i = 0; i < group_population_count; i++) {
-			group_pedestrians[i].velocity_rk[3] = group_pedestrians[i].acceleration_rk[3] * timestep;
-			group_pedestrians[i].position_rk[3] = (group_pedestrians[i].velocity + group_pedestrians[i].velocity_rk[2]) * timestep;
+			group_pedestrians[i].position_rk[3] = group_pedestrians[i].acceleration_rk[3] * timestep;
 		}
 	}
 
@@ -212,16 +205,7 @@ static void update_position(Pedestrian * a)
 	delta_p*=(1/6.0);
 	a->position = a->position + delta_p;
 
-
-	//update velocity
-	delta_v = a->velocity_rk[0] + (a->velocity_rk[1] * 2);
-	delta_v_temp = (a->velocity_rk[2] * 2) + a->velocity_rk[3];
-	delta_v += delta_v_temp;
-	delta_v*= (1/6.0);
-	a->velocity = a->velocity + delta_v;
-
 	a->time += timestep;
-
 }
 
 static void calculate_pedestrian_repulsion(Pedestrian * a,int index,int level_rk)
@@ -245,14 +229,12 @@ static void calculate_pedestrian_repulsion(Pedestrian * a,int index,int level_rk
 static double calculate_i_repulsion_vector(Pedestrian *a, Pedestrian b,int level_rk)
 {
 	double radius_sum = a->radius + b.radius;
-	double distance   = fabs(a->position_temp - b.position_temp);
+	double distance   = fabs(b.position_temp - a->position_temp);
 	
-	double from_b =  a->force_unit * exp((radius_sum-distance)/a->interaction_range);
-	if (b.position_temp > a->position_temp){
-		return (-1) * from_b;
-	} else {
-		return from_b;
-	}
+	double final_distance = fabs(distance - radius_sum);
+
+	double from_b =  a->force_unit * exp((-final_distance)/a->interaction_range);
+	return from_b;
 }
 
 static void  calculate_group_force(Pedestrian *a,int index,int level_rk)
@@ -267,23 +249,27 @@ static void  calculate_group_force(Pedestrian *a,int index,int level_rk)
 		//we compute the attraction force between this two pedestrians
 		attraction = calculate_i_attraction_vector(a,group_pedestrians[j],level_rk);
 		current_value = &a->acceleration_rk[level_rk];
-		*current_value += attraction ;
+		*current_value -= attraction ;
+
+		if (a->position_temp < group_pedestrians[j].position_temp){
+				*current_value *= -1;
+		} else if (group_pedestrians[j].position_temp == a->position_temp) {
+				*current_value *= 0;
+		}
 	}
 }
 
-//this method is to calculate the attraction force created by Pedestrian a on Pedestrian * a
+//this method is to calculate the attraction force created by Pedestrian b on Pedestrian * a
 static double calculate_i_attraction_vector(Pedestrian *a, Pedestrian b,int level_rk)
 {
 	double radius_sum = a->radius + b.radius;
 	double distance   = fabs(b.position_temp - a->position_temp);
 
-	double from_a = a->att_unit * exp((radius_sum-distance)/a->att_range);
-	if(b.position_temp > a->position_temp){
-		return from_a;
-	}else {
-		return (-1)*from_a;
-	}
+	double final_distance = fabs(distance - radius_sum);
 
+	double from_b = a->att_unit * exp((-final_distance)/a->att_range);
+
+	return from_b;
 }
 
 //this method is to retrieve information of group member a
@@ -309,9 +295,6 @@ static PyObject * group_pedestrian_a_property(PyObject * self, PyObject * args)
 	} else if(strcmp(property, "distance") ==0){
 		distance= fabs(group_pedestrians[0].position - group_pedestrians[1].position);
 		return PyFloat_FromDouble(distance);
-	} else if(strcmp(property, "velocity_rk") == 0){
-		return Py_BuildValue("ddddd", group_pedestrians[i].previous_velocity,
-				group_pedestrians[i].velocity_rk[0], group_pedestrians[i].velocity_rk[1],group_pedestrians[i].velocity_rk[2],group_pedestrians[i].velocity_rk[3]);
 	} else if(strcmp(property, "position_rk") == 0){
 		return Py_BuildValue("ddddd", group_pedestrians[i].previous_position,
 				group_pedestrians[i].position_rk[0], group_pedestrians[i].position_rk[1],group_pedestrians[i].position_rk[2],group_pedestrians[i].position_rk[3]);
