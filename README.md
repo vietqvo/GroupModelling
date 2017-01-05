@@ -4,11 +4,11 @@ This project aims at collecting data for crowd simulation model enhancement and 
 
 Contributors: 
 
-1. [**Viet Quang Vo**](mailto:viet.vo@monash.edu) -Student
+1. [**Viet Quang Vo**](mailto:viet.vo@monash.edu) 
 
-2. [**Bernd Meyer**](http://berndmeyer.net/) -Supervisor
+2. [**Bernd Meyer**](http://berndmeyer.net/)
 
-3. [**Aldeida Aleti**](http://users.monash.edu.au/~aldeidaa/) -Supervisor
+3. [**Aldeida Aleti**](http://users.monash.edu.au/~aldeidaa/) 
 
 This is the NICTA collaborative project between the faculties of IT, Engineering and Social Science at Monash University. It aims at collecting data for crowd dynamics simulation enhancement and disaster prevention at before and during disasters happens bby eexploring various optimisation techniques for an adaptive cost function. It comprises following folders:
 
